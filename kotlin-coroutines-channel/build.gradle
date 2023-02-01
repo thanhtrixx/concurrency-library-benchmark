@@ -1,0 +1,21 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
+plugins {
+  id "org.jetbrains.kotlin.jvm" version "${kotlin_version}"
+}
+
+dependencies {
+  implementation "org.jetbrains.kotlin:kotlin-reflect"
+  implementation "org.jetbrains.kotlin:kotlin-stdlib"
+
+//  implementation "org.apache.logging.log4j:log4j-api-kotlin:1.2.0"
+
+  implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:${coroutines_version}")
+}
+
+tasks.withType(KotlinCompile).configureEach {
+  kotlinOptions{
+    freeCompilerArgs = ["-Xjsr305=strict"]
+    jvmTarget = jdk_version
+  }
+}

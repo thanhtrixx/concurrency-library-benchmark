@@ -1,0 +1,31 @@
+plugins {
+  id "java"
+  id "me.champeau.jmh" version "$jmh_plugin_version"
+}
+
+dependencies {
+  implementation project(":lmax-disruptor")
+  implementation project(":kotlin-coroutines-channel")
+
+  implementation "org.openjdk.jmh:jmh-core:$jmh_version"
+  implementation "org.openjdk.jmh:jmh-generator-annprocess:$jmh_version"
+
+  implementation "org.apache.logging.log4j:log4j-core:$log4j2_version"
+  implementation "org.apache.logging.log4j:log4j-api:$log4j2_version"
+
+}
+
+jmh {
+  benchmarkMode = ['thrpt']
+  fork = 5
+  jvmArgs = ["-Xms256M", "-Xmx256M"]
+  jvmArgsAppend = ["-Xms1G", "-Xmx1G", "-XX:+UseG1GC"]
+  profilers = ["gc", "cl"]
+  iterations = 3
+  warmupIterations = 10
+  resultFormat = "JSON"
+  def date = System.getenv('DATE')?.trim() ?: "000"
+  humanOutputFile = project.file("${project.rootDir}/jmh-result/human-${date}.txt")
+  resultsFile = project.file("${project.rootDir}/jmh-result/results-${date}.json")
+  benchmarkParameters = [:]
+}

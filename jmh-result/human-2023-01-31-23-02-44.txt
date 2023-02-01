@@ -1,0 +1,593 @@
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.coroutine
+# Parameters: (bufferSize = 128, numberEvent = 100, poolSize = 8)
+
+# Run progress: 0.00% complete, ETA 00:08:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 25818.891 ops/s
+Iteration   1: 28578.546 ops/s
+
+
+Result "trile.ConcurrencyBenchmark.coroutine":
+  28578.546 ops/s
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.coroutine
+# Parameters: (bufferSize = 128, numberEvent = 100, poolSize = 64)
+
+# Run progress: 4.17% complete, ETA 00:07:55
+# Fork: 1 of 1
+# Warmup Iteration   1: 25599.301 ops/s
+Iteration   1: 27194.917 ops/s
+
+
+Result "trile.ConcurrencyBenchmark.coroutine":
+  27194.917 ops/s
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.coroutine
+# Parameters: (bufferSize = 128, numberEvent = 1000000, poolSize = 8)
+
+# Run progress: 8.33% complete, ETA 00:07:31
+# Fork: 1 of 1
+# Warmup Iteration   1: 17.168 ops/s
+Iteration   1: 17.954 ops/s
+
+
+Result "trile.ConcurrencyBenchmark.coroutine":
+  17.954 ops/s
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.coroutine
+# Parameters: (bufferSize = 128, numberEvent = 1000000, poolSize = 64)
+
+# Run progress: 12.50% complete, ETA 00:07:10
+# Fork: 1 of 1
+# Warmup Iteration   1: 13.708 ops/s
+Iteration   1: 15.254 ops/s
+
+
+Result "trile.ConcurrencyBenchmark.coroutine":
+  15.254 ops/s
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.coroutine
+# Parameters: (bufferSize = 2048, numberEvent = 100, poolSize = 8)
+
+# Run progress: 16.67% complete, ETA 00:06:49
+# Fork: 1 of 1
+# Warmup Iteration   1: 28025.965 ops/s
+Iteration   1: 26457.188 ops/s
+
+
+Result "trile.ConcurrencyBenchmark.coroutine":
+  26457.188 ops/s
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.coroutine
+# Parameters: (bufferSize = 2048, numberEvent = 100, poolSize = 64)
+
+# Run progress: 20.83% complete, ETA 00:06:28
+# Fork: 1 of 1
+# Warmup Iteration   1: 24656.044 ops/s
+Iteration   1: 25077.299 ops/s
+
+
+Result "trile.ConcurrencyBenchmark.coroutine":
+  25077.299 ops/s
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.coroutine
+# Parameters: (bufferSize = 2048, numberEvent = 1000000, poolSize = 8)
+
+# Run progress: 25.00% complete, ETA 00:06:08
+# Fork: 1 of 1
+# Warmup Iteration   1: 8.036 ops/s
+Iteration   1: 8.573 ops/s
+
+
+Result "trile.ConcurrencyBenchmark.coroutine":
+  8.573 ops/s
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.coroutine
+# Parameters: (bufferSize = 2048, numberEvent = 1000000, poolSize = 64)
+
+# Run progress: 29.17% complete, ETA 00:05:48
+# Fork: 1 of 1
+# Warmup Iteration   1: 7.743 ops/s
+Iteration   1: 7.634 ops/s
+
+
+Result "trile.ConcurrencyBenchmark.coroutine":
+  7.634 ops/s
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.disruptor
+# Parameters: (bufferSize = 128, numberEvent = 100, poolSize = 8)
+
+# Run progress: 33.33% complete, ETA 00:05:27
+# Fork: 1 of 1
+# Warmup Iteration   1: 4650.031 ops/s
+Iteration   1: 5058.767 ops/s
+
+
+Result "trile.ConcurrencyBenchmark.disruptor":
+  5058.767 ops/s
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.disruptor
+# Parameters: (bufferSize = 128, numberEvent = 100, poolSize = 64)
+
+# Run progress: 37.50% complete, ETA 00:05:07
+# Fork: 1 of 1
+# Warmup Iteration   1: 21430.119 ops/s
+Iteration   1: 21127.288 ops/s
+
+
+Result "trile.ConcurrencyBenchmark.disruptor":
+  21127.288 ops/s
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.disruptor
+# Parameters: (bufferSize = 128, numberEvent = 1000000, poolSize = 8)
+
+# Run progress: 41.67% complete, ETA 00:04:46
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.598 ops/s
+Iteration   1: 0.609 ops/s
+
+
+Result "trile.ConcurrencyBenchmark.disruptor":
+  0.609 ops/s
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.disruptor
+# Parameters: (bufferSize = 128, numberEvent = 1000000, poolSize = 64)
+
+# Run progress: 45.83% complete, ETA 00:04:27
+# Fork: 1 of 1
+# Warmup Iteration   1: 4.338 ops/s
+Iteration   1: 4.394 ops/s
+
+
+Result "trile.ConcurrencyBenchmark.disruptor":
+  4.394 ops/s
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.disruptor
+# Parameters: (bufferSize = 2048, numberEvent = 100, poolSize = 8)
+
+# Run progress: 50.00% complete, ETA 00:04:07
+# Fork: 1 of 1
+# Warmup Iteration   1: 1347.487 ops/s
+Iteration   1: 1277.616 ops/s
+
+
+Result "trile.ConcurrencyBenchmark.disruptor":
+  1277.616 ops/s
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.disruptor
+# Parameters: (bufferSize = 2048, numberEvent = 100, poolSize = 64)
+
+# Run progress: 54.17% complete, ETA 00:03:46
+# Fork: 1 of 1
+# Warmup Iteration   1: 5442.374 ops/s
+Iteration   1: 5454.117 ops/s
+
+
+Result "trile.ConcurrencyBenchmark.disruptor":
+  5454.117 ops/s
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.disruptor
+# Parameters: (bufferSize = 2048, numberEvent = 1000000, poolSize = 8)
+
+# Run progress: 58.33% complete, ETA 00:03:25
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.580 ops/s
+Iteration   1: 0.599 ops/s
+
+
+Result "trile.ConcurrencyBenchmark.disruptor":
+  0.599 ops/s
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.disruptor
+# Parameters: (bufferSize = 2048, numberEvent = 1000000, poolSize = 64)
+
+# Run progress: 62.50% complete, ETA 00:03:06
+# Fork: 1 of 1
+# Warmup Iteration   1: 4.393 ops/s
+Iteration   1: 4.550 ops/s
+
+
+Result "trile.ConcurrencyBenchmark.disruptor":
+  4.550 ops/s
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.scope
+# Parameters: (bufferSize = 128, numberEvent = 100, poolSize = 8)
+
+# Run progress: 66.67% complete, ETA 00:02:45
+# Fork: 1 of 1
+# Warmup Iteration   1: 30220.016 ops/s
+Iteration   1: 33049.958 ops/s
+
+
+Result "trile.ConcurrencyBenchmark.scope":
+  33049.958 ops/s
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.scope
+# Parameters: (bufferSize = 128, numberEvent = 100, poolSize = 64)
+
+# Run progress: 70.83% complete, ETA 00:02:24
+# Fork: 1 of 1
+# Warmup Iteration   1: 27383.005 ops/s
+Iteration   1: 30708.041 ops/s
+
+
+Result "trile.ConcurrencyBenchmark.scope":
+  30708.041 ops/s
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.scope
+# Parameters: (bufferSize = 128, numberEvent = 1000000, poolSize = 8)
+
+# Run progress: 75.00% complete, ETA 00:02:04
+# Fork: 1 of 1
+# Warmup Iteration   1: 17.224 ops/s
+Iteration   1: 18.278 ops/s
+
+
+Result "trile.ConcurrencyBenchmark.scope":
+  18.278 ops/s
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.scope
+# Parameters: (bufferSize = 128, numberEvent = 1000000, poolSize = 64)
+
+# Run progress: 79.17% complete, ETA 00:01:43
+# Fork: 1 of 1
+# Warmup Iteration   1: 15.144 ops/s
+Iteration   1: 15.059 ops/s
+
+
+Result "trile.ConcurrencyBenchmark.scope":
+  15.059 ops/s
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.scope
+# Parameters: (bufferSize = 2048, numberEvent = 100, poolSize = 8)
+
+# Run progress: 83.33% complete, ETA 00:01:22
+# Fork: 1 of 1
+# Warmup Iteration   1: 25773.571 ops/s
+Iteration   1: 27705.959 ops/s
+
+
+Result "trile.ConcurrencyBenchmark.scope":
+  27705.959 ops/s
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.scope
+# Parameters: (bufferSize = 2048, numberEvent = 100, poolSize = 64)
+
+# Run progress: 87.50% complete, ETA 00:01:01
+# Fork: 1 of 1
+# Warmup Iteration   1: 26125.423 ops/s
+Iteration   1: 25132.888 ops/s
+
+
+Result "trile.ConcurrencyBenchmark.scope":
+  25132.888 ops/s
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.scope
+# Parameters: (bufferSize = 2048, numberEvent = 1000000, poolSize = 8)
+
+# Run progress: 91.67% complete, ETA 00:00:41
+# Fork: 1 of 1
+# Warmup Iteration   1: 7.763 ops/s
+Iteration   1: 8.281 ops/s
+
+
+Result "trile.ConcurrencyBenchmark.scope":
+  8.281 ops/s
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.scope
+# Parameters: (bufferSize = 2048, numberEvent = 1000000, poolSize = 64)
+
+# Run progress: 95.83% complete, ETA 00:00:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 8.023 ops/s
+Iteration   1: 7.977 ops/s
+
+
+Result "trile.ConcurrencyBenchmark.scope":
+  7.977 ops/s
+
+
+# Run complete. Total time: 00:08:14
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                       (bufferSize)  (numberEvent)  (poolSize)   Mode  Cnt      Score   Error  Units
+ConcurrencyBenchmark.coroutine           128            100           8  thrpt       28578.546          ops/s
+ConcurrencyBenchmark.coroutine           128            100          64  thrpt       27194.917          ops/s
+ConcurrencyBenchmark.coroutine           128        1000000           8  thrpt          17.954          ops/s
+ConcurrencyBenchmark.coroutine           128        1000000          64  thrpt          15.254          ops/s
+ConcurrencyBenchmark.coroutine          2048            100           8  thrpt       26457.188          ops/s
+ConcurrencyBenchmark.coroutine          2048            100          64  thrpt       25077.299          ops/s
+ConcurrencyBenchmark.coroutine          2048        1000000           8  thrpt           8.573          ops/s
+ConcurrencyBenchmark.coroutine          2048        1000000          64  thrpt           7.634          ops/s
+ConcurrencyBenchmark.disruptor           128            100           8  thrpt        5058.767          ops/s
+ConcurrencyBenchmark.disruptor           128            100          64  thrpt       21127.288          ops/s
+ConcurrencyBenchmark.disruptor           128        1000000           8  thrpt           0.609          ops/s
+ConcurrencyBenchmark.disruptor           128        1000000          64  thrpt           4.394          ops/s
+ConcurrencyBenchmark.disruptor          2048            100           8  thrpt        1277.616          ops/s
+ConcurrencyBenchmark.disruptor          2048            100          64  thrpt        5454.117          ops/s
+ConcurrencyBenchmark.disruptor          2048        1000000           8  thrpt           0.599          ops/s
+ConcurrencyBenchmark.disruptor          2048        1000000          64  thrpt           4.550          ops/s
+ConcurrencyBenchmark.scope               128            100           8  thrpt       33049.958          ops/s
+ConcurrencyBenchmark.scope               128            100          64  thrpt       30708.041          ops/s
+ConcurrencyBenchmark.scope               128        1000000           8  thrpt          18.278          ops/s
+ConcurrencyBenchmark.scope               128        1000000          64  thrpt          15.059          ops/s
+ConcurrencyBenchmark.scope              2048            100           8  thrpt       27705.959          ops/s
+ConcurrencyBenchmark.scope              2048            100          64  thrpt       25132.888          ops/s
+ConcurrencyBenchmark.scope              2048        1000000           8  thrpt           8.281          ops/s
+ConcurrencyBenchmark.scope              2048        1000000          64  thrpt           7.977          ops/s
+
+Benchmark result is saved to /Users/trile/dev/trile/concurrency-library-benchmark/jmh-result/results-2023-01-31-23-02-44.json

@@ -1,0 +1,15 @@
+plugins {
+  id "java-library"
+}
+
+def java_version = System.getenv('JAVA_VERSION')?.trim() ?: "$jdk_version"
+
+subprojects {
+  sourceCompatibility = "$java_version"
+  targetCompatibility = "$java_version"
+
+  repositories {
+    jcenter()
+    mavenCentral()
+  }
+}
