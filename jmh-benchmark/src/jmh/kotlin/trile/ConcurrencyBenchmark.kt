@@ -50,9 +50,6 @@ open class ConcurrencyBenchmark : Log {
       createCounterConsumerFunction(scopeCounter, blackhole, numberEvent)
     )
 
-    l.info {
-      "bufferSize $bufferSize, poolSize $poolSize, numberEvent $numberEvent, disruptorCounter ${disruptorCounter.get()}, coroutinesCounter ${coroutinesCounter.get()}, scopeCounter ${scopeCounter.get()}"
-    }
   }
 
   @TearDown
