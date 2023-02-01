@@ -5,7 +5,7 @@ plugins {
 
 dependencies {
   implementation project(":lmax-disruptor")
-  implementation project(":kotlin-coroutines-channel")
+  implementation project(":kotlin-coroutines")
 
   implementation "org.openjdk.jmh:jmh-core:$jmh_version"
   implementation "org.openjdk.jmh:jmh-generator-annprocess:$jmh_version"
@@ -25,7 +25,7 @@ jmh {
   warmupIterations = 10
   resultFormat = "JSON"
   def date = System.getenv('DATE')?.trim() ?: "000"
-  humanOutputFile = project.file("${project.rootDir}/jmh-result/human-${date}.txt")
-  resultsFile = project.file("${project.rootDir}/jmh-result/results-${date}.json")
+  humanOutputFile = project.file("${project.rootDir}/result/human-${date}.txt")
+  resultsFile = project.file("${project.rootDir}/result/results-${date}.json")
   benchmarkParameters = [:]
 }

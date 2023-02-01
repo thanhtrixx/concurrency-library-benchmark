@@ -1,4 +1,4 @@
 rootProject.name = "concurrency-library-benchmark"
 include "jmh-benchmark"
-include "kotlin-coroutines-channel"
+include "kotlin-coroutines"
 include "lmax-disruptor"
