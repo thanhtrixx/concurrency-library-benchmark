@@ -1,9 +1,16 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
   id "java"
   id "me.champeau.jmh" version "$jmh_plugin_version"
+  id "org.jetbrains.kotlin.jvm" version "${kotlin_version}"
+
 }
 
 dependencies {
+  implementation "org.jetbrains.kotlin:kotlin-reflect"
+  implementation "org.jetbrains.kotlin:kotlin-stdlib"
+
   implementation project(":lmax-disruptor")
   implementation project(":kotlin-coroutines")
 
@@ -28,4 +35,11 @@ jmh {
   humanOutputFile = project.file("${project.rootDir}/result/human-${date}.txt")
   resultsFile = project.file("${project.rootDir}/result/results-${date}.json")
   benchmarkParameters = [:]
+}
+
+tasks.withType(KotlinCompile).configureEach {
+  kotlinOptions {
+    freeCompilerArgs = ["-Xjsr305=strict"]
+    jvmTarget = jdk_version
+  }
 }
