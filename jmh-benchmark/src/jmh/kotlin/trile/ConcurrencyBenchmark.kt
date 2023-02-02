@@ -16,10 +16,10 @@ import trile.coroutines.uti.Log
 @State(Scope.Thread)
 open class ConcurrencyBenchmark : Log {
 
-  @Param("128", "2048")
+  @Param("128")
   private var bufferSize = 0
 
-  @Param("8", "64")
+  @Param("64", "256")
   private var poolSize = 0
 
   @Param("100", "1000000")
