@@ -36,6 +36,7 @@ After running the benchmark, the results will be generated in the [result](resul
 ![Lmax-Disruptor vs Kotlin Coroutines: bufferSize = [512], numberEvent=[20, 10000, 100000] with GC info](result/images/bufferSize-512-numberEvent-20-10000-100000.png)
 + [Lmax-Disruptor vs Kotlin Coroutines: bufferSize = [128, 512, 1024], numberEvent=[100, 1000, 10000, 20000]](https://jmh.morethan.io/?gist=3bd4037a941da944fe3a578ee2fe5fb6)
 ![Lmax-Disruptor vs Kotlin Coroutines: bufferSize = [128, 512, 1024], numberEvent=[100, 1000, 10000, 20000]](result/images/bufferSize-128-512-1024-numberEvent-100-1000-100000-200000.png)
+
 ## Conclusion
 
 Based on the benchmark results, it can be concluded that Kotlin Coroutines have better throughput compared to LMAX Disruptor, however, they consume more memory. The choice between the two ultimately depends on the specific requirements of the application and the trade-offs the developer is willing to make.
