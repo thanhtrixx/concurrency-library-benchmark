@@ -2,11 +2,13 @@ plugins {
   id "java-library"
 }
 
-def java_version = System.getenv('JAVA_VERSION')?.trim() ?: "$jdk_version"
+ext {
+  jdk_version = System.getenv('JAVA_VERSION')?.trim() ?: "$java_version"
+}
 
 subprojects {
-  sourceCompatibility = "$java_version"
-  targetCompatibility = "$java_version"
+  sourceCompatibility = "$jdk_version"
+  targetCompatibility = "$jdk_version"
 
   repositories {
     jcenter()

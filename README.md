@@ -1,8 +1,7 @@
 # concurrency-library-benchmark
 
 ### [jmh-benchmark](jmh-benchmark)
-### [kotlin-coroutines-channel](kotlin-coroutines-channel)
-### [kotlin-coroutines-flow](kotlin-coroutines-flow)
+### [kotlin-coroutines](kotlin-coroutines)
 ### [lmax-disruptor](lmax-disruptor)
 
 ### Run

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO" monitorInterval="30">
+  <Properties>
+    <Property name="LOG_DIR">logs/</Property>
+    <Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} %5p - [%15.15t] %-10.10c{1.} : %m %n%ex</Property>
+  </Properties>
+
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT" follow="true">
+      <PatternLayout pattern="${LOG_PATTERN}"/>
+    </Console>
+    <RollingFile
+      name="LogToFile"
+      fileName="${LOG_DIR}/jdk-${env:JAVA_VERSION:-UNKNOWN}-date-${env:DATE:-000}.log"
+      filePattern="${LOG_DIR}/${date:yy-MM-dd}/jdk-${env:JAVA_VERSION:-UNKNOWN}-date-${env:DATE:-000}-%i.log"
+      ignoreExceptions="false" immediateFlush="true">
+      <PatternLayout pattern="${LOG_PATTERN}"/>
+      <Policies>
+        <!--        <OnStartupTriggeringPolicy/>-->
+        <SizeBasedTriggeringPolicy size="200 MB"/>
+      </Policies>
+    </RollingFile>
+  </Appenders>
+
+  <Loggers>
+    <Root level="info">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="LogToFile"/>
+    </Root>
+  </Loggers>
+</Configuration>

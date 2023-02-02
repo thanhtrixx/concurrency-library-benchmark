@@ -1,18 +1,25 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
   id "java"
   id "me.champeau.jmh" version "$jmh_plugin_version"
+  id "org.jetbrains.kotlin.jvm" version "${kotlin_version}"
+
 }
 
 dependencies {
+  implementation "org.jetbrains.kotlin:kotlin-reflect"
+  implementation "org.jetbrains.kotlin:kotlin-stdlib"
+
   implementation project(":lmax-disruptor")
-  implementation project(":kotlin-coroutines-channel")
+  implementation project(":kotlin-coroutines")
 
   implementation "org.openjdk.jmh:jmh-core:$jmh_version"
   implementation "org.openjdk.jmh:jmh-generator-annprocess:$jmh_version"
 
   implementation "org.apache.logging.log4j:log4j-core:$log4j2_version"
   implementation "org.apache.logging.log4j:log4j-api:$log4j2_version"
-
+  implementation "org.apache.logging.log4j:log4j-api-kotlin:1.2.0"
 }
 
 jmh {
@@ -25,7 +32,14 @@ jmh {
   warmupIterations = 10
   resultFormat = "JSON"
   def date = System.getenv('DATE')?.trim() ?: "000"
-  humanOutputFile = project.file("${project.rootDir}/jmh-result/human-${date}.txt")
-  resultsFile = project.file("${project.rootDir}/jmh-result/results-${date}.json")
+  humanOutputFile = project.file("${project.rootDir}/result/human-${date}.txt")
+  resultsFile = project.file("${project.rootDir}/result/results-${date}.json")
   benchmarkParameters = [:]
+}
+
+tasks.withType(KotlinCompile).configureEach {
+  kotlinOptions {
+    freeCompilerArgs = ["-Xjsr305=strict"]
+    jvmTarget = jdk_version
+  }
 }
