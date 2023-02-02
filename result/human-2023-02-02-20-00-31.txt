@@ -1,0 +1,2700 @@
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -Xms1G -Xmx1G -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 10 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.coroutine
+# Parameters: (bufferSize = 128, numberEvent = 100, poolSize = 64)
+
+# Run progress: 0.00% complete, ETA 00:36:00
+# Fork: 1 of 3
+# Warmup Iteration   1: 302213.252 ops/s
+# Warmup Iteration   2: 293653.149 ops/s
+# Warmup Iteration   3: 302173.082 ops/s
+Iteration   1: 303920.640 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   981.851 MB/sec
+                 ·gc.alloc.rate.norm:              3560.147 B/op
+                 ·gc.churn.G1_Eden_Space:          990.921 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3593.035 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.002 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.009 B/op
+                 ·gc.count:                        17.000 counts
+                 ·gc.time:                         14.000 ms
+
+Iteration   2: 304486.904 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   984.013 MB/sec
+                 ·gc.alloc.rate.norm:              3560.143 B/op
+                 ·gc.churn.G1_Eden_Space:          991.413 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3586.915 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.003 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.011 B/op
+                 ·gc.count:                        17.000 counts
+                 ·gc.time:                         15.000 ms
+
+Iteration   3: 304169.710 ops/s
+                 ·class.load:                      15126.335 classes/sec
+                 ·class.load.norm:                 ≈ 10⁻³ classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   965.216 MB/sec
+                 ·gc.alloc.rate.norm:              3566.638 B/op
+                 ·gc.churn.G1_Eden_Space:          970.729 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3587.010 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.003 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.010 B/op
+                 ·gc.count:                        17.000 counts
+                 ·gc.time:                         14.000 ms
+
+
+# Run progress: 2.78% complete, ETA 00:37:04
+# Fork: 2 of 3
+# Warmup Iteration   1: 302976.723 ops/s
+# Warmup Iteration   2: 305510.048 ops/s
+# Warmup Iteration   3: 303971.147 ops/s
+Iteration   1: 303688.039 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   981.418 MB/sec
+                 ·gc.alloc.rate.norm:              3560.147 B/op
+                 ·gc.churn.G1_Eden_Space:          990.202 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3592.014 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.005 B/op
+                 ·gc.count:                        17.000 counts
+                 ·gc.time:                         14.000 ms
+
+Iteration   2: 303932.310 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   982.092 MB/sec
+                 ·gc.alloc.rate.norm:              3560.144 B/op
+                 ·gc.churn.G1_Eden_Space:          991.274 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3593.429 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.002 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.008 B/op
+                 ·gc.count:                        17.000 counts
+                 ·gc.time:                         15.000 ms
+
+Iteration   3: 304463.615 ops/s
+                 ·class.load:                      15332.843 classes/sec
+                 ·class.load.norm:                 ≈ 10⁻³ classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   953.714 MB/sec
+                 ·gc.alloc.rate.norm:              3566.635 B/op
+                 ·gc.churn.G1_Eden_Space:          958.397 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3584.148 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.003 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.012 B/op
+                 ·gc.count:                        17.000 counts
+                 ·gc.time:                         14.000 ms
+
+
+# Run progress: 5.56% complete, ETA 00:36:03
+# Fork: 3 of 3
+# Warmup Iteration   1: 304160.408 ops/s
+# Warmup Iteration   2: 303475.990 ops/s
+# Warmup Iteration   3: 305818.493 ops/s
+Iteration   1: 305470.772 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   986.971 MB/sec
+                 ·gc.alloc.rate.norm:              3560.146 B/op
+                 ·gc.churn.G1_Eden_Space:          990.142 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3571.585 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.002 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.006 B/op
+                 ·gc.count:                        17.000 counts
+                 ·gc.time:                         14.000 ms
+
+Iteration   2: 306006.620 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   987.842 MB/sec
+                 ·gc.alloc.rate.norm:              3560.143 B/op
+                 ·gc.churn.G1_Eden_Space:          990.319 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3569.072 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.002 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.009 B/op
+                 ·gc.count:                        17.000 counts
+                 ·gc.time:                         15.000 ms
+
+Iteration   3: 305830.092 ops/s
+                 ·class.load:                      15087.848 classes/sec
+                 ·class.load.norm:                 ≈ 10⁻³ classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   972.366 MB/sec
+                 ·gc.alloc.rate.norm:              3566.607 B/op
+                 ·gc.churn.G1_Eden_Space:          973.281 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3569.963 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.003 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.009 B/op
+                 ·gc.count:                        17.000 counts
+                 ·gc.time:                         13.000 ms
+
+
+
+Result "trile.ConcurrencyBenchmark.coroutine":
+  304663.189 ±(99.9%) 1475.720 ops/s [Average]
+  (min, avg, max) = (303688.039, 304663.189, 306006.620), stdev = 878.177
+  CI (99.9%): [303187.469, 306138.910] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·class.load":
+  5060.781 ±(99.9%) 12756.951 classes/sec [Average]
+  (min, avg, max) = (≈ 0, 5060.781, 15332.843), stdev = 7591.457
+  CI (99.9%): [≈ 0, 17817.731] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·class.load.norm":
+  ≈ 10⁻⁴ classes/op
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·class.unload":
+  ≈ 0 classes/sec
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·class.unload.norm":
+  ≈ 0 classes/op
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.alloc.rate":
+  977.276 ±(99.9%) 19.132 MB/sec [Average]
+  (min, avg, max) = (953.714, 977.276, 987.842), stdev = 11.385
+  CI (99.9%): [958.144, 996.408] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.alloc.rate.norm":
+  3562.306 ±(99.9%) 5.446 B/op [Average]
+  (min, avg, max) = (3560.143, 3562.306, 3566.638), stdev = 3.241
+  CI (99.9%): [3556.860, 3567.752] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.churn.G1_Eden_Space":
+  982.964 ±(99.9%) 20.656 MB/sec [Average]
+  (min, avg, max) = (958.397, 982.964, 991.413), stdev = 12.292
+  CI (99.9%): [962.308, 1003.620] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.churn.G1_Eden_Space.norm":
+  3583.019 ±(99.9%) 16.989 B/op [Average]
+  (min, avg, max) = (3569.072, 3583.019, 3593.429), stdev = 10.110
+  CI (99.9%): [3566.030, 3600.008] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.churn.G1_Survivor_Space":
+  0.002 ±(99.9%) 0.001 MB/sec [Average]
+  (min, avg, max) = (0.001, 0.002, 0.003), stdev = 0.001
+  CI (99.9%): [0.001, 0.003] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.churn.G1_Survivor_Space.norm":
+  0.009 ±(99.9%) 0.004 B/op [Average]
+  (min, avg, max) = (0.005, 0.009, 0.012), stdev = 0.002
+  CI (99.9%): [0.005, 0.013] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.count":
+  153.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (17.000, 17.000, 17.000), stdev = 0.001
+  CI (99.9%): [153.000, 153.000] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.time":
+  128.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (13.000, 14.222, 15.000), stdev = 0.667
+  CI (99.9%): [128.000, 128.000] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -Xms1G -Xmx1G -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 10 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.coroutine
+# Parameters: (bufferSize = 128, numberEvent = 100, poolSize = 256)
+
+# Run progress: 8.33% complete, ETA 00:34:58
+# Fork: 1 of 3
+# Warmup Iteration   1: 305797.498 ops/s
+# Warmup Iteration   2: 306232.751 ops/s
+# Warmup Iteration   3: 304884.783 ops/s
+Iteration   1: 304867.282 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   985.228 MB/sec
+                 ·gc.alloc.rate.norm:              3560.147 B/op
+                 ·gc.churn.G1_Eden_Space:          990.669 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3579.808 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.003 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.009 B/op
+                 ·gc.count:                        17.000 counts
+                 ·gc.time:                         14.000 ms
+
+Iteration   2: 303707.084 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   980.617 MB/sec
+                 ·gc.alloc.rate.norm:              3560.144 B/op
+                 ·gc.churn.G1_Eden_Space:          990.273 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3595.201 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.002 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.007 B/op
+                 ·gc.count:                        17.000 counts
+                 ·gc.time:                         15.000 ms
+
+Iteration   3: 305276.663 ops/s
+                 ·class.load:                      15300.726 classes/sec
+                 ·class.load.norm:                 ≈ 10⁻³ classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   958.191 MB/sec
+                 ·gc.alloc.rate.norm:              3566.616 B/op
+                 ·gc.churn.G1_Eden_Space:          960.319 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3574.537 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.002 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.008 B/op
+                 ·gc.count:                        17.000 counts
+                 ·gc.time:                         14.000 ms
+
+
+# Run progress: 11.11% complete, ETA 00:33:56
+# Fork: 2 of 3
+# Warmup Iteration   1: 305669.695 ops/s
+# Warmup Iteration   2: 302801.967 ops/s
+# Warmup Iteration   3: 291527.140 ops/s
+Iteration   1: 306172.759 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   988.464 MB/sec
+                 ·gc.alloc.rate.norm:              3560.146 B/op
+                 ·gc.churn.G1_Eden_Space:          990.078 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3565.960 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.002 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.007 B/op
+                 ·gc.count:                        17.000 counts
+                 ·gc.time:                         14.000 ms
+
+Iteration   2: 305664.237 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   987.209 MB/sec
+                 ·gc.alloc.rate.norm:              3560.143 B/op
+                 ·gc.churn.G1_Eden_Space:          990.798 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3573.087 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.004 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.014 B/op
+                 ·gc.count:                        17.000 counts
+                 ·gc.time:                         14.000 ms
+
+Iteration   3: 300760.046 ops/s
+                 ·class.load:                      15092.336 classes/sec
+                 ·class.load.norm:                 ≈ 10⁻³ classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   956.023 MB/sec
+                 ·gc.alloc.rate.norm:              3566.719 B/op
+                 ·gc.churn.G1_Eden_Space:          972.997 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3630.047 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.002 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.008 B/op
+                 ·gc.count:                        17.000 counts
+                 ·gc.time:                         15.000 ms
+
+
+# Run progress: 13.89% complete, ETA 00:32:52
+# Fork: 3 of 3
+# Warmup Iteration   1: 305646.598 ops/s
+# Warmup Iteration   2: 316334.270 ops/s
+# Warmup Iteration   3: 316141.741 ops/s
+Iteration   1: 317685.950 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   1026.651 MB/sec
+                 ·gc.alloc.rate.norm:              3560.149 B/op
+                 ·gc.churn.G1_Eden_Space:          1049.711 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3640.115 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.002 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.007 B/op
+                 ·gc.count:                        18.000 counts
+                 ·gc.time:                         15.000 ms
+
+Iteration   2: 313315.242 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   1012.306 MB/sec
+                 ·gc.alloc.rate.norm:              3560.138 B/op
+                 ·gc.churn.G1_Eden_Space:          991.436 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3486.741 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.003 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.011 B/op
+                 ·gc.count:                        17.000 counts
+                 ·gc.time:                         14.000 ms
+
+Iteration   3: 315189.034 ops/s
+                 ·class.load:                      15278.093 classes/sec
+                 ·class.load.norm:                 ≈ 10⁻³ classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   989.822 MB/sec
+                 ·gc.alloc.rate.norm:              3566.423 B/op
+                 ·gc.churn.G1_Eden_Space:          1018.227 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3668.770 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.003 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.012 B/op
+                 ·gc.count:                        18.000 counts
+                 ·gc.time:                         15.000 ms
+
+
+
+Result "trile.ConcurrencyBenchmark.coroutine":
+  308070.922 ±(99.9%) 9772.881 ops/s [Average]
+  (min, avg, max) = (300760.046, 308070.922, 317685.950), stdev = 5815.685
+  CI (99.9%): [298298.041, 317843.803] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·class.load":
+  5074.573 ±(99.9%) 12791.596 classes/sec [Average]
+  (min, avg, max) = (≈ 0, 5074.573, 15300.726), stdev = 7612.074
+  CI (99.9%): [≈ 0, 17866.169] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·class.load.norm":
+  ≈ 10⁻⁴ classes/op
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·class.unload":
+  ≈ 0 classes/sec
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·class.unload.norm":
+  ≈ 0 classes/op
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.alloc.rate":
+  987.168 ±(99.9%) 37.838 MB/sec [Average]
+  (min, avg, max) = (956.023, 987.168, 1026.651), stdev = 22.517
+  CI (99.9%): [949.330, 1025.005] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.alloc.rate.norm":
+  3562.292 ±(99.9%) 5.414 B/op [Average]
+  (min, avg, max) = (3560.138, 3562.292, 3566.719), stdev = 3.222
+  CI (99.9%): [3556.878, 3567.705] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.churn.G1_Eden_Space":
+  994.945 ±(99.9%) 43.316 MB/sec [Average]
+  (min, avg, max) = (960.319, 994.945, 1049.711), stdev = 25.776
+  CI (99.9%): [951.630, 1038.261] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.churn.G1_Eden_Space.norm":
+  3590.474 ±(99.9%) 88.551 B/op [Average]
+  (min, avg, max) = (3486.741, 3590.474, 3668.770), stdev = 52.695
+  CI (99.9%): [3501.923, 3679.025] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.churn.G1_Survivor_Space":
+  0.003 ±(99.9%) 0.001 MB/sec [Average]
+  (min, avg, max) = (0.002, 0.003, 0.004), stdev = 0.001
+  CI (99.9%): [0.001, 0.004] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.churn.G1_Survivor_Space.norm":
+  0.009 ±(99.9%) 0.004 B/op [Average]
+  (min, avg, max) = (0.007, 0.009, 0.014), stdev = 0.003
+  CI (99.9%): [0.005, 0.013] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.count":
+  155.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (17.000, 17.222, 18.000), stdev = 0.441
+  CI (99.9%): [155.000, 155.000] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.time":
+  130.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (14.000, 14.444, 15.000), stdev = 0.527
+  CI (99.9%): [130.000, 130.000] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -Xms1G -Xmx1G -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 10 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.coroutine
+# Parameters: (bufferSize = 128, numberEvent = 1000000, poolSize = 64)
+
+# Run progress: 16.67% complete, ETA 00:31:48
+# Fork: 1 of 3
+# Warmup Iteration   1: 35.591 ops/s
+# Warmup Iteration   2: 34.801 ops/s
+# Warmup Iteration   3: 36.435 ops/s
+Iteration   1: 36.120 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   829.480 MB/sec
+                 ·gc.alloc.rate.norm:              25295126.983 B/op
+                 ·gc.churn.G1_Eden_Space:          873.397 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     26634409.724 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 36.199 B/op
+                 ·gc.count:                        15.000 counts
+                 ·gc.time:                         12.000 ms
+
+Iteration   2: 35.968 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   825.758 MB/sec
+                 ·gc.alloc.rate.norm:              25295057.267 B/op
+                 ·gc.churn.G1_Eden_Space:          816.024 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     24996886.756 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.002 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 57.333 B/op
+                 ·gc.count:                        14.000 counts
+                 ·gc.time:                         12.000 ms
+
+Iteration   3: 35.640 ops/s
+                 ·class.load:                      15091.242 classes/sec
+                 ·class.load.norm:                 4.140 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   805.395 MB/sec
+                 ·gc.alloc.rate.norm:              25350465.188 B/op
+                 ·gc.churn.G1_Eden_Space:          800.835 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     25206944.627 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 40.471 B/op
+                 ·gc.count:                        14.000 counts
+                 ·gc.time:                         12.000 ms
+
+
+# Run progress: 19.44% complete, ETA 00:30:45
+# Fork: 2 of 3
+# Warmup Iteration   1: 34.736 ops/s
+# Warmup Iteration   2: 36.406 ops/s
+# Warmup Iteration   3: 36.591 ops/s
+Iteration   1: 36.281 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   832.405 MB/sec
+                 ·gc.alloc.rate.norm:              25295051.372 B/op
+                 ·gc.churn.G1_Eden_Space:          815.795 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     24790300.915 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 36.099 B/op
+                 ·gc.count:                        14.000 counts
+                 ·gc.time:                         12.000 ms
+
+Iteration   2: 35.848 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   822.960 MB/sec
+                 ·gc.alloc.rate.norm:              25295059.989 B/op
+                 ·gc.churn.G1_Eden_Space:          815.525 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     25066515.967 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 40.245 B/op
+                 ·gc.count:                        14.000 counts
+                 ·gc.time:                         11.000 ms
+
+Iteration   3: 36.367 ops/s
+                 ·class.load:                      15303.869 classes/sec
+                 ·class.load.norm:                 4.060 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   810.268 MB/sec
+                 ·gc.alloc.rate.norm:              25349459.429 B/op
+                 ·gc.churn.G1_Eden_Space:          846.662 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     26488066.813 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.002 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 51.033 B/op
+                 ·gc.count:                        15.000 counts
+                 ·gc.time:                         12.000 ms
+
+
+# Run progress: 22.22% complete, ETA 00:29:42
+# Fork: 3 of 3
+# Warmup Iteration   1: 35.232 ops/s
+# Warmup Iteration   2: 36.353 ops/s
+# Warmup Iteration   3: 36.903 ops/s
+Iteration   1: 36.752 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   843.977 MB/sec
+                 ·gc.alloc.rate.norm:              25295037.543 B/op
+                 ·gc.churn.G1_Eden_Space:          815.898 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     24453476.174 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 34.413 B/op
+                 ·gc.count:                        14.000 counts
+                 ·gc.time:                         11.000 ms
+
+Iteration   2: 36.537 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   838.781 MB/sec
+                 ·gc.alloc.rate.norm:              25295112.240 B/op
+                 ·gc.churn.G1_Eden_Space:          873.540 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     26343323.279 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 40.240 B/op
+                 ·gc.count:                        15.000 counts
+                 ·gc.time:                         14.000 ms
+
+Iteration   3: 36.552 ops/s
+                 ·class.load:                      15071.733 classes/sec
+                 ·class.load.norm:                 4.038 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   826.865 MB/sec
+                 ·gc.alloc.rate.norm:              25349103.432 B/op
+                 ·gc.churn.G1_Eden_Space:          802.009 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     24587101.727 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 36.044 B/op
+                 ·gc.count:                        14.000 counts
+                 ·gc.time:                         12.000 ms
+
+
+
+Result "trile.ConcurrencyBenchmark.coroutine":
+  36.229 ±(99.9%) 0.614 ops/s [Average]
+  (min, avg, max) = (35.640, 36.229, 36.752), stdev = 0.365
+  CI (99.9%): [35.616, 36.843] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·class.load":
+  5051.872 ±(99.9%) 12734.473 classes/sec [Average]
+  (min, avg, max) = (≈ 0, 5051.872, 15303.869), stdev = 7578.081
+  CI (99.9%): [≈ 0, 17786.345] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·class.load.norm":
+  1.360 ±(99.9%) 3.428 classes/op [Average]
+  (min, avg, max) = (≈ 0, 1.360, 4.140), stdev = 2.040
+  CI (99.9%): [≈ 0, 4.788] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·class.unload":
+  ≈ 0 classes/sec
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·class.unload.norm":
+  ≈ 0 classes/op
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.alloc.rate":
+  826.210 ±(99.9%) 20.764 MB/sec [Average]
+  (min, avg, max) = (805.395, 826.210, 843.977), stdev = 12.356
+  CI (99.9%): [805.446, 846.974] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.alloc.rate.norm":
+  25313274.827 ±(99.9%) 45881.241 B/op [Average]
+  (min, avg, max) = (25295037.543, 25313274.827, 25350465.188), stdev = 27303.190
+  CI (99.9%): [25267393.586, 25359156.068] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.churn.G1_Eden_Space":
+  828.854 ±(99.9%) 47.842 MB/sec [Average]
+  (min, avg, max) = (800.835, 828.854, 873.540), stdev = 28.470
+  CI (99.9%): [781.012, 876.696] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.churn.G1_Eden_Space.norm":
+  25396336.220 ±(99.9%) 1435373.579 B/op [Average]
+  (min, avg, max) = (24453476.174, 25396336.220, 26634409.724), stdev = 854167.793
+  CI (99.9%): [23960962.641, 26831709.799] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.churn.G1_Survivor_Space":
+  0.001 ±(99.9%) 0.001 MB/sec [Average]
+  (min, avg, max) = (0.001, 0.001, 0.002), stdev = 0.001
+  CI (99.9%): [0.001, 0.002] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.churn.G1_Survivor_Space.norm":
+  41.342 ±(99.9%) 13.055 B/op [Average]
+  (min, avg, max) = (34.413, 41.342, 57.333), stdev = 7.769
+  CI (99.9%): [28.287, 54.397] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.count":
+  129.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (14.000, 14.333, 15.000), stdev = 0.500
+  CI (99.9%): [129.000, 129.000] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.time":
+  108.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (11.000, 12.000, 14.000), stdev = 0.866
+  CI (99.9%): [108.000, 108.000] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -Xms1G -Xmx1G -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 10 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.coroutine
+# Parameters: (bufferSize = 128, numberEvent = 1000000, poolSize = 256)
+
+# Run progress: 25.00% complete, ETA 00:28:38
+# Fork: 1 of 3
+# Warmup Iteration   1: 35.587 ops/s
+# Warmup Iteration   2: 35.917 ops/s
+# Warmup Iteration   3: 36.765 ops/s
+Iteration   1: 36.764 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   844.218 MB/sec
+                 ·gc.alloc.rate.norm:              25295037.522 B/op
+                 ·gc.churn.G1_Eden_Space:          816.131 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     24453476.174 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.002 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 51.239 B/op
+                 ·gc.count:                        14.000 counts
+                 ·gc.time:                         11.000 ms
+
+Iteration   2: 36.385 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   835.685 MB/sec
+                 ·gc.alloc.rate.norm:              25295115.200 B/op
+                 ·gc.churn.G1_Eden_Space:          872.700 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     26415496.767 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 34.696 B/op
+                 ·gc.count:                        15.000 counts
+                 ·gc.time:                         17.000 ms
+
+Iteration   3: 36.495 ops/s
+                 ·class.load:                      15352.360 classes/sec
+                 ·class.load.norm:                 4.038 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   812.252 MB/sec
+                 ·gc.alloc.rate.norm:              25349075.913 B/op
+                 ·gc.churn.G1_Eden_Space:          787.836 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     24587101.727 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 29.639 B/op
+                 ·gc.count:                        14.000 counts
+                 ·gc.time:                         12.000 ms
+
+
+# Run progress: 27.78% complete, ETA 00:27:34
+# Fork: 2 of 3
+# Warmup Iteration   1: 35.009 ops/s
+# Warmup Iteration   2: 36.152 ops/s
+# Warmup Iteration   3: 35.442 ops/s
+Iteration   1: 36.429 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   836.497 MB/sec
+                 ·gc.alloc.rate.norm:              25295117.918 B/op
+                 ·gc.churn.G1_Eden_Space:          873.547 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     26415496.767 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.002 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 49.184 B/op
+                 ·gc.count:                        15.000 counts
+                 ·gc.time:                         12.000 ms
+
+Iteration   2: 36.895 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   847.505 MB/sec
+                 ·gc.alloc.rate.norm:              25295029.492 B/op
+                 ·gc.churn.G1_Eden_Space:          814.881 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     24321295.222 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 39.049 B/op
+                 ·gc.count:                        14.000 counts
+                 ·gc.time:                         11.000 ms
+
+Iteration   3: 36.904 ops/s
+                 ·class.load:                      15095.239 classes/sec
+                 ·class.load.norm:                 3.995 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   834.228 MB/sec
+                 ·gc.alloc.rate.norm:              25348556.951 B/op
+                 ·gc.churn.G1_Eden_Space:          857.594 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     26058530.595 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 39.049 B/op
+                 ·gc.count:                        15.000 counts
+                 ·gc.time:                         12.000 ms
+
+
+# Run progress: 30.56% complete, ETA 00:26:31
+# Fork: 3 of 3
+# Warmup Iteration   1: 34.084 ops/s
+# Warmup Iteration   2: 34.121 ops/s
+# Warmup Iteration   3: 36.312 ops/s
+Iteration   1: 36.401 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   835.647 MB/sec
+                 ·gc.alloc.rate.norm:              25295118.093 B/op
+                 ·gc.churn.G1_Eden_Space:          872.660 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     26415496.767 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 37.611 B/op
+                 ·gc.count:                        15.000 counts
+                 ·gc.time:                         12.000 ms
+
+Iteration   2: 36.337 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   834.545 MB/sec
+                 ·gc.alloc.rate.norm:              25295045.604 B/op
+                 ·gc.churn.G1_Eden_Space:          815.646 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     24722195.692 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 39.692 B/op
+                 ·gc.count:                        14.000 counts
+                 ·gc.time:                         12.000 ms
+
+Iteration   3: 36.556 ops/s
+                 ·class.load:                      15373.095 classes/sec
+                 ·class.load.norm:                 4.038 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   811.088 MB/sec
+                 ·gc.alloc.rate.norm:              25349148.306 B/op
+                 ·gc.churn.G1_Eden_Space:          842.899 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     26343323.279 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.002 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 50.754 B/op
+                 ·gc.count:                        15.000 counts
+                 ·gc.time:                         13.000 ms
+
+
+
+Result "trile.ConcurrencyBenchmark.coroutine":
+  36.574 ±(99.9%) 0.374 ops/s [Average]
+  (min, avg, max) = (36.337, 36.574, 36.904), stdev = 0.223
+  CI (99.9%): [36.200, 36.949] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·class.load":
+  5091.188 ±(99.9%) 12833.776 classes/sec [Average]
+  (min, avg, max) = (≈ 0, 5091.188, 15373.095), stdev = 7637.175
+  CI (99.9%): [≈ 0, 17924.965] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·class.load.norm":
+  1.341 ±(99.9%) 3.381 classes/op [Average]
+  (min, avg, max) = (≈ 0, 1.341, 4.038), stdev = 2.012
+  CI (99.9%): [≈ 0, 4.722] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·class.unload":
+  ≈ 0 classes/sec
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·class.unload.norm":
+  ≈ 0 classes/op
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.alloc.rate":
+  832.407 ±(99.9%) 21.206 MB/sec [Average]
+  (min, avg, max) = (811.088, 832.407, 847.505), stdev = 12.620
+  CI (99.9%): [811.201, 853.614] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.alloc.rate.norm":
+  25313027.222 ±(99.9%) 45246.357 B/op [Average]
+  (min, avg, max) = (25295029.492, 25313027.222, 25349148.306), stdev = 26925.381
+  CI (99.9%): [25267780.865, 25358273.579] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.churn.G1_Eden_Space":
+  839.321 ±(99.9%) 53.438 MB/sec [Average]
+  (min, avg, max) = (787.836, 839.321, 873.547), stdev = 31.800
+  CI (99.9%): [785.883, 892.760] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.churn.G1_Eden_Space.norm":
+  25525823.665 ±(99.9%) 1622128.284 B/op [Average]
+  (min, avg, max) = (24321295.222, 25525823.665, 26415496.767), stdev = 965302.523
+  CI (99.9%): [23903695.381, 27147951.950] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.churn.G1_Survivor_Space":
+  0.001 ±(99.9%) 0.001 MB/sec [Average]
+  (min, avg, max) = (0.001, 0.001, 0.002), stdev = 0.001
+  CI (99.9%): [0.001, 0.002] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.churn.G1_Survivor_Space.norm":
+  41.213 ±(99.9%) 12.689 B/op [Average]
+  (min, avg, max) = (29.639, 41.213, 51.239), stdev = 7.551
+  CI (99.9%): [28.523, 53.902] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.count":
+  131.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (14.000, 14.556, 15.000), stdev = 0.527
+  CI (99.9%): [131.000, 131.000] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.coroutine:·gc.time":
+  112.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (11.000, 12.444, 17.000), stdev = 1.810
+  CI (99.9%): [112.000, 112.000] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -Xms1G -Xmx1G -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 10 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.disruptor
+# Parameters: (bufferSize = 128, numberEvent = 100, poolSize = 64)
+
+# Run progress: 33.33% complete, ETA 00:25:27
+# Fork: 1 of 3
+# Warmup Iteration   1: 43343.663 ops/s
+# Warmup Iteration   2: 44837.800 ops/s
+# Warmup Iteration   3: 44693.589 ops/s
+Iteration   1: 43077.378 ops/s
+                 ·class.load:         ≈ 0 classes/sec
+                 ·class.load.norm:    ≈ 0 classes/op
+                 ·class.unload:       ≈ 0 classes/sec
+                 ·class.unload.norm:  ≈ 0 classes/op
+                 ·gc.alloc.rate:      9.396 MB/sec
+                 ·gc.alloc.rate.norm: 240.309 B/op
+                 ·gc.count:           ≈ 0 counts
+
+Iteration   2: 42577.961 ops/s
+                 ·class.load:         ≈ 0 classes/sec
+                 ·class.load.norm:    ≈ 0 classes/op
+                 ·class.unload:       ≈ 0 classes/sec
+                 ·class.unload.norm:  ≈ 0 classes/op
+                 ·gc.alloc.rate:      9.280 MB/sec
+                 ·gc.alloc.rate.norm: 240.112 B/op
+                 ·gc.count:           ≈ 0 counts
+
+Iteration   3: 45224.143 ops/s
+                 ·class.load:         15138.322 classes/sec
+                 ·class.load.norm:    0.003 classes/op
+                 ·class.unload:       ≈ 0 classes/sec
+                 ·class.unload.norm:  ≈ 0 classes/op
+                 ·gc.alloc.rate:      7.564 MB/sec
+                 ·gc.alloc.rate.norm: 187.801 B/op
+                 ·gc.count:           ≈ 0 counts
+
+
+# Run progress: 36.11% complete, ETA 00:24:23
+# Fork: 2 of 3
+# Warmup Iteration   1: 44871.060 ops/s
+# Warmup Iteration   2: 45199.775 ops/s
+# Warmup Iteration   3: 45474.507 ops/s
+Iteration   1: 45460.932 ops/s
+                 ·class.load:         ≈ 0 classes/sec
+                 ·class.load.norm:    ≈ 0 classes/op
+                 ·class.unload:       ≈ 0 classes/sec
+                 ·class.unload.norm:  ≈ 0 classes/op
+                 ·gc.alloc.rate:      9.904 MB/sec
+                 ·gc.alloc.rate.norm: 240.051 B/op
+                 ·gc.count:           ≈ 0 counts
+
+Iteration   2: 45420.105 ops/s
+                 ·class.load:         ≈ 0 classes/sec
+                 ·class.load.norm:    ≈ 0 classes/op
+                 ·class.unload:       ≈ 0 classes/sec
+                 ·class.unload.norm:  ≈ 0 classes/op
+                 ·gc.alloc.rate:      9.893 MB/sec
+                 ·gc.alloc.rate.norm: 240.047 B/op
+                 ·gc.count:           ≈ 0 counts
+
+Iteration   3: 45158.635 ops/s
+                 ·class.load:         15317.080 classes/sec
+                 ·class.load.norm:    0.003 classes/op
+                 ·class.unload:       ≈ 0 classes/sec
+                 ·class.unload.norm:  ≈ 0 classes/op
+                 ·gc.alloc.rate:      7.468 MB/sec
+                 ·gc.alloc.rate.norm: 187.891 B/op
+                 ·gc.count:           ≈ 0 counts
+
+
+# Run progress: 38.89% complete, ETA 00:23:20
+# Fork: 3 of 3
+# Warmup Iteration   1: 44109.613 ops/s
+# Warmup Iteration   2: 44312.215 ops/s
+# Warmup Iteration   3: 44749.668 ops/s
+Iteration   1: 45382.000 ops/s
+                 ·class.load:         ≈ 0 classes/sec
+                 ·class.load.norm:    ≈ 0 classes/op
+                 ·class.unload:       ≈ 0 classes/sec
+                 ·class.unload.norm:  ≈ 0 classes/op
+                 ·gc.alloc.rate:      9.888 MB/sec
+                 ·gc.alloc.rate.norm: 240.067 B/op
+                 ·gc.count:           ≈ 0 counts
+
+Iteration   2: 45271.850 ops/s
+                 ·class.load:         ≈ 0 classes/sec
+                 ·class.load.norm:    ≈ 0 classes/op
+                 ·class.unload:       ≈ 0 classes/sec
+                 ·class.unload.norm:  ≈ 0 classes/op
+                 ·gc.alloc.rate:      9.866 MB/sec
+                 ·gc.alloc.rate.norm: 240.116 B/op
+                 ·gc.count:           ≈ 0 counts
+
+Iteration   3: 44737.888 ops/s
+                 ·class.load:         15178.581 classes/sec
+                 ·class.load.norm:    0.003 classes/op
+                 ·class.unload:       ≈ 0 classes/sec
+                 ·class.unload.norm:  ≈ 0 classes/op
+                 ·gc.alloc.rate:      7.480 MB/sec
+                 ·gc.alloc.rate.norm: 188.299 B/op
+                 ·gc.count:           ≈ 0 counts
+
+
+
+Result "trile.ConcurrencyBenchmark.disruptor":
+  44701.210 ±(99.9%) 1832.382 ops/s [Average]
+  (min, avg, max) = (42577.961, 44701.210, 45460.932), stdev = 1090.421
+  CI (99.9%): [42868.828, 46533.593] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·class.load":
+  5070.443 ±(99.9%) 12781.068 classes/sec [Average]
+  (min, avg, max) = (≈ 0, 5070.443, 15317.080), stdev = 7605.808
+  CI (99.9%): [≈ 0, 17851.510] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·class.load.norm":
+  0.001 ±(99.9%) 0.003 classes/op [Average]
+  (min, avg, max) = (≈ 0, 0.001, 0.003), stdev = 0.002
+  CI (99.9%): [≈ 0, 0.004] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·class.unload":
+  ≈ 0 classes/sec
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·class.unload.norm":
+  ≈ 0 classes/op
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·gc.alloc.rate":
+  8.971 ±(99.9%) 1.888 MB/sec [Average]
+  (min, avg, max) = (7.468, 8.971, 9.904), stdev = 1.124
+  CI (99.9%): [7.083, 10.860] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·gc.alloc.rate.norm":
+  222.744 ±(99.9%) 43.793 B/op [Average]
+  (min, avg, max) = (187.801, 222.744, 240.309), stdev = 26.060
+  CI (99.9%): [178.951, 266.536] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·gc.count":
+  ≈ 0 counts
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -Xms1G -Xmx1G -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 10 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.disruptor
+# Parameters: (bufferSize = 128, numberEvent = 100, poolSize = 256)
+
+# Run progress: 41.67% complete, ETA 00:22:16
+# Fork: 1 of 3
+# Warmup Iteration   1: 106663.724 ops/s
+# Warmup Iteration   2: 110714.365 ops/s
+# Warmup Iteration   3: 111667.678 ops/s
+Iteration   1: 110753.217 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   21.078 MB/sec
+                 ·gc.alloc.rate.norm:              209.678 B/op
+                 ·gc.churn.G1_Eden_Space:          58.123 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     578.182 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.017 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.174 B/op
+                 ·gc.count:                        1.000 counts
+                 ·gc.time:                         1.000 ms
+
+Iteration   2: 110171.513 ops/s
+                 ·class.load:         ≈ 0 classes/sec
+                 ·class.load.norm:    ≈ 0 classes/op
+                 ·class.unload:       ≈ 0 classes/sec
+                 ·class.unload.norm:  ≈ 0 classes/op
+                 ·gc.alloc.rate:      20.926 MB/sec
+                 ·gc.alloc.rate.norm: 209.265 B/op
+                 ·gc.count:           ≈ 0 counts
+
+Iteration   3: 108094.285 ops/s
+                 ·class.load:         15402.226 classes/sec
+                 ·class.load.norm:    0.001 classes/op
+                 ·class.unload:       ≈ 0 classes/sec
+                 ·class.unload.norm:  ≈ 0 classes/op
+                 ·gc.alloc.rate:      15.372 MB/sec
+                 ·gc.alloc.rate.norm: 162.325 B/op
+                 ·gc.count:           ≈ 0 counts
+
+
+# Run progress: 44.44% complete, ETA 00:21:12
+# Fork: 2 of 3
+# Warmup Iteration   1: 109734.286 ops/s
+# Warmup Iteration   2: 112104.187 ops/s
+# Warmup Iteration   3: 111408.755 ops/s
+Iteration   1: 112102.210 ops/s
+                 ·class.load:                  ≈ 0 classes/sec
+                 ·class.load.norm:             ≈ 0 classes/op
+                 ·class.unload:                ≈ 0 classes/sec
+                 ·class.unload.norm:           ≈ 0 classes/op
+                 ·gc.alloc.rate:               21.314 MB/sec
+                 ·gc.alloc.rate.norm:          209.471 B/op
+                 ·gc.churn.G1_Eden_Space:      58.128 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm: 571.263 B/op
+                 ·gc.count:                    1.000 counts
+                 ·gc.time:                     2.000 ms
+
+Iteration   2: 111967.634 ops/s
+                 ·class.load:         ≈ 0 classes/sec
+                 ·class.load.norm:    ≈ 0 classes/op
+                 ·class.unload:       ≈ 0 classes/sec
+                 ·class.unload.norm:  ≈ 0 classes/op
+                 ·gc.alloc.rate:      21.241 MB/sec
+                 ·gc.alloc.rate.norm: 208.999 B/op
+                 ·gc.count:           ≈ 0 counts
+
+Iteration   3: 112046.961 ops/s
+                 ·class.load:                  15127.532 classes/sec
+                 ·class.load.norm:             0.001 classes/op
+                 ·class.unload:                ≈ 0 classes/sec
+                 ·class.unload.norm:           ≈ 0 classes/op
+                 ·gc.alloc.rate:               16.146 MB/sec
+                 ·gc.alloc.rate.norm:          161.717 B/op
+                 ·gc.churn.G1_Eden_Space:      57.069 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm: 571.588 B/op
+                 ·gc.count:                    1.000 counts
+                 ·gc.time:                     2.000 ms
+
+
+# Run progress: 47.22% complete, ETA 00:20:08
+# Fork: 3 of 3
+# Warmup Iteration   1: 111876.559 ops/s
+# Warmup Iteration   2: 112991.026 ops/s
+# Warmup Iteration   3: 111769.554 ops/s
+Iteration   1: 112675.293 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   21.464 MB/sec
+                 ·gc.alloc.rate.norm:              209.875 B/op
+                 ·gc.churn.G1_Eden_Space:          58.138 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     568.477 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.018 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.173 B/op
+                 ·gc.count:                        1.000 counts
+                 ·gc.time:                         1.000 ms
+
+Iteration   2: 112350.604 ops/s
+                 ·class.load:         ≈ 0 classes/sec
+                 ·class.load.norm:    ≈ 0 classes/op
+                 ·class.unload:       ≈ 0 classes/sec
+                 ·class.unload.norm:  ≈ 0 classes/op
+                 ·gc.alloc.rate:      21.378 MB/sec
+                 ·gc.alloc.rate.norm: 209.632 B/op
+                 ·gc.count:           ≈ 0 counts
+
+Iteration   3: 113160.801 ops/s
+                 ·class.load:                  15389.607 classes/sec
+                 ·class.load.norm:             0.001 classes/op
+                 ·class.unload:                ≈ 0 classes/sec
+                 ·class.unload.norm:           ≈ 0 classes/op
+                 ·gc.alloc.rate:               16.019 MB/sec
+                 ·gc.alloc.rate.norm:          161.544 B/op
+                 ·gc.churn.G1_Eden_Space:      56.139 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm: 566.140 B/op
+                 ·gc.count:                    1.000 counts
+                 ·gc.time:                     3.000 ms
+
+
+
+Result "trile.ConcurrencyBenchmark.disruptor":
+  111480.280 ±(99.9%) 2634.425 ops/s [Average]
+  (min, avg, max) = (108094.285, 111480.280, 113160.801), stdev = 1567.704
+  CI (99.9%): [108845.855, 114114.704] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·class.load":
+  5102.152 ±(99.9%) 12861.413 classes/sec [Average]
+  (min, avg, max) = (≈ 0, 5102.152, 15402.226), stdev = 7653.620
+  CI (99.9%): [≈ 0, 17963.564] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·class.load.norm":
+  ≈ 10⁻³ classes/op
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·class.unload":
+  ≈ 0 classes/sec
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·class.unload.norm":
+  ≈ 0 classes/op
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·gc.alloc.rate":
+  19.438 ±(99.9%) 4.548 MB/sec [Average]
+  (min, avg, max) = (15.372, 19.438, 21.464), stdev = 2.707
+  CI (99.9%): [14.889, 23.986] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·gc.alloc.rate.norm":
+  193.612 ±(99.9%) 40.019 B/op [Average]
+  (min, avg, max) = (161.544, 193.612, 209.875), stdev = 23.815
+  CI (99.9%): [153.593, 233.630] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·gc.churn.G1_Eden_Space":
+  31.955 ±(99.9%) 50.954 MB/sec [Average]
+  (min, avg, max) = (≈ 0, 31.955, 58.138), stdev = 30.322
+  CI (99.9%): [≈ 0, 82.909] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·gc.churn.G1_Eden_Space.norm":
+  317.294 ±(99.9%) 505.859 B/op [Average]
+  (min, avg, max) = (≈ 0, 317.294, 578.182), stdev = 301.029
+  CI (99.9%): [≈ 0, 823.154] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·gc.churn.G1_Survivor_Space":
+  0.004 ±(99.9%) 0.013 MB/sec [Average]
+  (min, avg, max) = (≈ 0, 0.004, 0.018), stdev = 0.008
+  CI (99.9%): [≈ 0, 0.017] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·gc.churn.G1_Survivor_Space.norm":
+  0.038 ±(99.9%) 0.128 B/op [Average]
+  (min, avg, max) = (≈ 0, 0.038, 0.174), stdev = 0.076
+  CI (99.9%): [≈ 0, 0.167] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·gc.count":
+  5.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (≈ 0, 0.556, 1.000), stdev = 0.527
+  CI (99.9%): [5.000, 5.000] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·gc.time":
+  9.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (≈ 0, 1.000, 3.000), stdev = 1.118
+  CI (99.9%): [9.000, 9.000] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -Xms1G -Xmx1G -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 10 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.disruptor
+# Parameters: (bufferSize = 128, numberEvent = 1000000, poolSize = 64)
+
+# Run progress: 50.00% complete, ETA 00:19:05
+# Fork: 1 of 3
+# Warmup Iteration   1: 4.387 ops/s
+# Warmup Iteration   2: 4.524 ops/s
+# Warmup Iteration   3: 4.166 ops/s
+Iteration   1: 4.458 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   99.217 MB/sec
+                 ·gc.alloc.rate.norm:              24502149.511 B/op
+                 ·gc.churn.G1_Eden_Space:          115.303 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     28474663.822 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.005 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 1324.800 B/op
+                 ·gc.count:                        2.000 counts
+                 ·gc.time:                         4.000 ms
+
+Iteration   2: 4.511 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   100.436 MB/sec
+                 ·gc.alloc.rate.norm:              24498946.609 B/op
+                 ·gc.churn.G1_Eden_Space:          114.197 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     27855649.391 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.021 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 5097.043 B/op
+                 ·gc.count:                        2.000 counts
+                 ·gc.time:                         3.000 ms
+
+Iteration   3: 4.526 ops/s
+                 ·class.load:                      15357.515 classes/sec
+                 ·class.load.norm:                 32.239 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   1.743 MB/sec
+                 ·gc.alloc.rate.norm:              431640.174 B/op
+                 ·gc.churn.G1_Eden_Space:          56.247 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     13927824.696 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 200.000 B/op
+                 ·gc.count:                        1.000 counts
+                 ·gc.time:                         2.000 ms
+
+
+# Run progress: 52.78% complete, ETA 00:18:02
+# Fork: 2 of 3
+# Warmup Iteration   1: 4.650 ops/s
+# Warmup Iteration   2: 4.593 ops/s
+# Warmup Iteration   3: 4.521 ops/s
+Iteration   1: 4.418 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   98.331 MB/sec
+                 ·gc.alloc.rate.norm:              24500801.244 B/op
+                 ·gc.churn.G1_Eden_Space:          114.279 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     28474663.822 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 147.378 B/op
+                 ·gc.count:                        2.000 counts
+                 ·gc.time:                         4.000 ms
+
+Iteration   2: 4.558 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   101.362 MB/sec
+                 ·gc.alloc.rate.norm:              24500180.870 B/op
+                 ·gc.churn.G1_Eden_Space:          115.244 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     27855649.391 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.011 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 2778.783 B/op
+                 ·gc.count:                        2.000 counts
+                 ·gc.time:                         4.000 ms
+
+Iteration   3: 4.602 ops/s
+                 ·class.load:                      15686.308 classes/sec
+                 ·class.load.norm:                 31.553 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   1.710 MB/sec
+                 ·gc.alloc.rate.norm:              423062.979 B/op
+                 ·gc.churn.G1_Eden_Space:          110.195 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     27262976.000 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.003 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 696.681 B/op
+                 ·gc.count:                        2.000 counts
+                 ·gc.time:                         4.000 ms
+
+
+# Run progress: 55.56% complete, ETA 00:16:59
+# Fork: 3 of 3
+# Warmup Iteration   1: 4.684 ops/s
+# Warmup Iteration   2: 4.641 ops/s
+# Warmup Iteration   3: 4.601 ops/s
+Iteration   1: 4.518 ops/s
+                 ·class.load:                  ≈ 0 classes/sec
+                 ·class.load.norm:             ≈ 0 classes/op
+                 ·class.unload:                ≈ 0 classes/sec
+                 ·class.unload.norm:           ≈ 0 classes/op
+                 ·gc.alloc.rate:               100.447 MB/sec
+                 ·gc.alloc.rate.norm:          24498870.435 B/op
+                 ·gc.churn.G1_Eden_Space:      114.210 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm: 27855649.391 B/op
+                 ·gc.count:                    2.000 counts
+                 ·gc.time:                     4.000 ms
+
+Iteration   2: 4.586 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   101.956 MB/sec
+                 ·gc.alloc.rate.norm:              24501212.348 B/op
+                 ·gc.churn.G1_Eden_Space:          115.914 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     27855649.391 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.016 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 3762.609 B/op
+                 ·gc.count:                        2.000 counts
+                 ·gc.time:                         4.000 ms
+
+Iteration   3: 4.585 ops/s
+                 ·class.load:                  15156.916 classes/sec
+                 ·class.load.norm:             32.239 classes/op
+                 ·class.unload:                ≈ 0 classes/sec
+                 ·class.unload.norm:           ≈ 0 classes/op
+                 ·gc.alloc.rate:               1.766 MB/sec
+                 ·gc.alloc.rate.norm:          432074.609 B/op
+                 ·gc.churn.G1_Eden_Space:      113.867 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm: 27855649.391 B/op
+                 ·gc.count:                    2.000 counts
+                 ·gc.time:                     5.000 ms
+
+
+
+Result "trile.ConcurrencyBenchmark.disruptor":
+  4.529 ±(99.9%) 0.104 ops/s [Average]
+  (min, avg, max) = (4.418, 4.529, 4.602), stdev = 0.062
+  CI (99.9%): [4.426, 4.633] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·class.load":
+  5133.415 ±(99.9%) 12941.506 classes/sec [Average]
+  (min, avg, max) = (≈ 0, 5133.415, 15686.308), stdev = 7701.283
+  CI (99.9%): [≈ 0, 18074.921] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·class.load.norm":
+  10.670 ±(99.9%) 26.898 classes/op [Average]
+  (min, avg, max) = (≈ 0, 10.670, 32.239), stdev = 16.006
+  CI (99.9%): [≈ 0, 37.568] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·class.unload":
+  ≈ 0 classes/sec
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·class.unload.norm":
+  ≈ 0 classes/op
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·gc.alloc.rate":
+  67.441 ±(99.9%) 82.824 MB/sec [Average]
+  (min, avg, max) = (1.710, 67.441, 101.956), stdev = 49.287
+  CI (99.9%): [≈ 0, 150.265] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·gc.alloc.rate.norm":
+  16476548.753 ±(99.9%) 20225242.569 B/op [Average]
+  (min, avg, max) = (423062.979, 16476548.753, 24502149.511), stdev = 12035717.436
+  CI (99.9%): [≈ 0, 36701791.322] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·gc.churn.G1_Eden_Space":
+  107.717 ±(99.9%) 32.551 MB/sec [Average]
+  (min, avg, max) = (56.247, 107.717, 115.914), stdev = 19.370
+  CI (99.9%): [75.167, 140.268] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·gc.churn.G1_Eden_Space.norm":
+  26379819.477 ±(99.9%) 7870718.875 B/op [Average]
+  (min, avg, max) = (13927824.696, 26379819.477, 28474663.822), stdev = 4683738.555
+  CI (99.9%): [18509100.602, 34250538.353] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·gc.churn.G1_Survivor_Space":
+  0.006 ±(99.9%) 0.013 MB/sec [Average]
+  (min, avg, max) = (≈ 0, 0.006, 0.021), stdev = 0.008
+  CI (99.9%): [≈ 0, 0.019] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·gc.churn.G1_Survivor_Space.norm":
+  1556.366 ±(99.9%) 3163.975 B/op [Average]
+  (min, avg, max) = (≈ 0, 1556.366, 5097.043), stdev = 1882.831
+  CI (99.9%): [≈ 0, 4720.341] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·gc.count":
+  17.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (1.000, 1.889, 2.000), stdev = 0.333
+  CI (99.9%): [17.000, 17.000] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·gc.time":
+  34.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (2.000, 3.778, 5.000), stdev = 0.833
+  CI (99.9%): [34.000, 34.000] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -Xms1G -Xmx1G -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 10 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.disruptor
+# Parameters: (bufferSize = 128, numberEvent = 1000000, poolSize = 256)
+
+# Run progress: 58.33% complete, ETA 00:15:55
+# Fork: 1 of 3
+# Warmup Iteration   1: 17.874 ops/s
+# Warmup Iteration   2: 18.397 ops/s
+# Warmup Iteration   3: 16.754 ops/s
+Iteration   1: 16.630 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   370.786 MB/sec
+                 ·gc.alloc.rate.norm:              24575690.108 B/op
+                 ·gc.churn.G1_Eden_Space:          348.428 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     23093787.593 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.007 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 436.599 B/op
+                 ·gc.count:                        6.000 counts
+                 ·gc.time:                         6.000 ms
+
+Iteration   2: 16.752 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   373.428 MB/sec
+                 ·gc.alloc.rate.norm:              24566881.429 B/op
+                 ·gc.churn.G1_Eden_Space:          407.104 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     26782378.667 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 79.476 B/op
+                 ·gc.count:                        7.000 counts
+                 ·gc.time:                         6.000 ms
+
+Iteration   3: 16.432 ops/s
+                 ·class.load:                      15412.741 classes/sec
+                 ·class.load.norm:                 8.988 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   1.749 MB/sec
+                 ·gc.alloc.rate.norm:              121190.303 B/op
+                 ·gc.churn.G1_Eden_Space:          337.289 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     23373712.291 B/op
+                 ·gc.churn.G1_Survivor_Space:      ≈ 10⁻³ MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 31.661 B/op
+                 ·gc.count:                        6.000 counts
+                 ·gc.time:                         5.000 ms
+
+
+# Run progress: 61.11% complete, ETA 00:14:52
+# Fork: 2 of 3
+# Warmup Iteration   1: 18.291 ops/s
+# Warmup Iteration   2: 17.585 ops/s
+# Warmup Iteration   3: 15.085 ops/s
+Iteration   1: 15.089 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   331.306 MB/sec
+                 ·gc.alloc.rate.norm:              24205120.530 B/op
+                 ·gc.churn.G1_Eden_Space:          349.588 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     25540811.444 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.007 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 542.411 B/op
+                 ·gc.count:                        6.000 counts
+                 ·gc.time:                         5.000 ms
+
+Iteration   2: 15.098 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   331.661 MB/sec
+                 ·gc.alloc.rate.norm:              24207382.947 B/op
+                 ·gc.churn.G1_Eden_Space:          289.690 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     21143983.158 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 74.263 B/op
+                 ·gc.count:                        5.000 counts
+                 ·gc.time:                         9.000 ms
+
+Iteration   3: 15.064 ops/s
+                 ·class.load:                      15142.585 classes/sec
+                 ·class.load.norm:                 9.821 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   1.779 MB/sec
+                 ·gc.alloc.rate.norm:              132477.086 B/op
+                 ·gc.churn.G1_Eden_Space:          343.016 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     25540811.444 B/op
+                 ·gc.churn.G1_Survivor_Space:      ≈ 10⁻³ MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 32.106 B/op
+                 ·gc.count:                        6.000 counts
+                 ·gc.time:                         5.000 ms
+
+
+# Run progress: 63.89% complete, ETA 00:13:48
+# Fork: 3 of 3
+# Warmup Iteration   1: 18.063 ops/s
+# Warmup Iteration   2: 17.299 ops/s
+# Warmup Iteration   3: 17.615 ops/s
+Iteration   1: 17.765 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   403.128 MB/sec
+                 ·gc.alloc.rate.norm:              25015201.978 B/op
+                 ·gc.churn.G1_Eden_Space:          407.359 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     25277750.652 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.007 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 441.708 B/op
+                 ·gc.count:                        7.000 counts
+                 ·gc.time:                         6.000 ms
+
+Iteration   2: 17.819 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   402.553 MB/sec
+                 ·gc.alloc.rate.norm:              24898779.844 B/op
+                 ·gc.churn.G1_Eden_Space:          406.396 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     25136534.168 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 74.592 B/op
+                 ·gc.count:                        7.000 counts
+                 ·gc.time:                         6.000 ms
+
+Iteration   3: 17.917 ops/s
+                 ·class.load:                      15385.480 classes/sec
+                 ·class.load.norm:                 8.239 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   1.755 MB/sec
+                 ·gc.alloc.rate.norm:              111262.800 B/op
+                 ·gc.churn.G1_Eden_Space:          394.179 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     24996886.756 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 51.244 B/op
+                 ·gc.count:                        7.000 counts
+                 ·gc.time:                         6.000 ms
+
+
+
+Result "trile.ConcurrencyBenchmark.disruptor":
+  16.507 ±(99.9%) 2.010 ops/s [Average]
+  (min, avg, max) = (15.064, 16.507, 17.917), stdev = 1.196
+  CI (99.9%): [14.497, 18.517] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·class.load":
+  5104.534 ±(99.9%) 12867.364 classes/sec [Average]
+  (min, avg, max) = (≈ 0, 5104.534, 15412.741), stdev = 7657.162
+  CI (99.9%): [≈ 0, 17971.898] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·class.load.norm":
+  3.005 ±(99.9%) 7.605 classes/op [Average]
+  (min, avg, max) = (≈ 0, 3.005, 9.821), stdev = 4.525
+  CI (99.9%): [≈ 0, 10.610] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·class.unload":
+  ≈ 0 classes/sec
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·class.unload.norm":
+  ≈ 0 classes/op
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·gc.alloc.rate":
+  246.460 ±(99.9%) 311.322 MB/sec [Average]
+  (min, avg, max) = (1.749, 246.460, 403.128), stdev = 185.263
+  CI (99.9%): [≈ 0, 557.783] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·gc.alloc.rate.norm":
+  16425998.558 ±(99.9%) 20553710.479 B/op [Average]
+  (min, avg, max) = (111262.800, 16425998.558, 25015201.978), stdev = 12231183.421
+  CI (99.9%): [≈ 0, 36979709.038] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·gc.churn.G1_Eden_Space":
+  364.783 ±(99.9%) 69.201 MB/sec [Average]
+  (min, avg, max) = (289.690, 364.783, 407.359), stdev = 41.181
+  CI (99.9%): [295.582, 433.985] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·gc.churn.G1_Eden_Space.norm":
+  24542961.797 ±(99.9%) 2857048.170 B/op [Average]
+  (min, avg, max) = (21143983.158, 24542961.797, 26782378.667), stdev = 1700183.538
+  CI (99.9%): [21685913.627, 27400009.966] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·gc.churn.G1_Survivor_Space":
+  0.003 ±(99.9%) 0.005 MB/sec [Average]
+  (min, avg, max) = (≈ 10⁻³, 0.003, 0.007), stdev = 0.003
+  CI (99.9%): [≈ 0, 0.008] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·gc.churn.G1_Survivor_Space.norm":
+  196.007 ±(99.9%) 354.598 B/op [Average]
+  (min, avg, max) = (31.661, 196.007, 542.411), stdev = 211.016
+  CI (99.9%): [≈ 0, 550.605] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·gc.count":
+  57.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (5.000, 6.333, 7.000), stdev = 0.707
+  CI (99.9%): [57.000, 57.000] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.disruptor:·gc.time":
+  54.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (5.000, 6.000, 9.000), stdev = 1.225
+  CI (99.9%): [54.000, 54.000] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -Xms1G -Xmx1G -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 10 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.scope
+# Parameters: (bufferSize = 128, numberEvent = 100, poolSize = 64)
+
+# Run progress: 66.67% complete, ETA 00:12:44
+# Fork: 1 of 3
+# Warmup Iteration   1: 86372.887 ops/s
+# Warmup Iteration   2: 84081.890 ops/s
+# Warmup Iteration   3: 89615.434 ops/s
+Iteration   1: 88055.079 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   286.754 MB/sec
+                 ·gc.alloc.rate.norm:              3591.309 B/op
+                 ·gc.churn.G1_Eden_Space:          291.231 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3647.380 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.023 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.287 B/op
+                 ·gc.count:                        5.000 counts
+                 ·gc.time:                         4.000 ms
+
+Iteration   2: 88894.591 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   289.376 MB/sec
+                 ·gc.alloc.rate.norm:              3589.542 B/op
+                 ·gc.churn.G1_Eden_Space:          291.363 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3614.185 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.007 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.084 B/op
+                 ·gc.count:                        5.000 counts
+                 ·gc.time:                         4.000 ms
+
+Iteration   3: 89241.005 ops/s
+                 ·class.load:                      15064.465 classes/sec
+                 ·class.load.norm:                 0.002 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   15.806 MB/sec
+                 ·gc.alloc.rate.norm:              198.571 B/op
+                 ·gc.churn.G1_Eden_Space:          286.457 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3598.807 B/op
+                 ·gc.churn.G1_Survivor_Space:      ≈ 10⁻³ MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.004 B/op
+                 ·gc.count:                        5.000 counts
+                 ·gc.time:                         4.000 ms
+
+
+# Run progress: 69.44% complete, ETA 00:11:41
+# Fork: 2 of 3
+# Warmup Iteration   1: 85732.742 ops/s
+# Warmup Iteration   2: 90126.102 ops/s
+# Warmup Iteration   3: 90289.531 ops/s
+Iteration   1: 91381.994 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   298.667 MB/sec
+                 ·gc.alloc.rate.norm:              3603.084 B/op
+                 ·gc.churn.G1_Eden_Space:          291.315 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3514.390 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.013 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.153 B/op
+                 ·gc.count:                        5.000 counts
+                 ·gc.time:                         5.000 ms
+
+Iteration   2: 91299.606 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   300.631 MB/sec
+                 ·gc.alloc.rate.norm:              3629.901 B/op
+                 ·gc.churn.G1_Eden_Space:          291.257 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3516.709 B/op
+                 ·gc.churn.G1_Survivor_Space:      ≈ 10⁻³ MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.006 B/op
+                 ·gc.count:                        5.000 counts
+                 ·gc.time:                         3.000 ms
+
+Iteration   3: 90820.947 ops/s
+                 ·class.load:                      15230.478 classes/sec
+                 ·class.load.norm:                 0.002 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   15.881 MB/sec
+                 ·gc.alloc.rate.norm:              198.139 B/op
+                 ·gc.churn.G1_Eden_Space:          339.943 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     4241.306 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.002 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.019 B/op
+                 ·gc.count:                        6.000 counts
+                 ·gc.time:                         6.000 ms
+
+
+# Run progress: 72.22% complete, ETA 00:10:37
+# Fork: 3 of 3
+# Warmup Iteration   1: 85907.006 ops/s
+# Warmup Iteration   2: 90572.177 ops/s
+# Warmup Iteration   3: 90994.497 ops/s
+Iteration   1: 89778.198 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   302.947 MB/sec
+                 ·gc.alloc.rate.norm:              3719.809 B/op
+                 ·gc.churn.G1_Eden_Space:          291.287 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3576.643 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.009 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.112 B/op
+                 ·gc.count:                        5.000 counts
+                 ·gc.time:                         4.000 ms
+
+Iteration   2: 89082.600 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   301.574 MB/sec
+                 ·gc.alloc.rate.norm:              3731.917 B/op
+                 ·gc.churn.G1_Eden_Space:          291.297 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3604.744 B/op
+                 ·gc.churn.G1_Survivor_Space:      ≈ 10⁻³ MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.006 B/op
+                 ·gc.count:                        5.000 counts
+                 ·gc.time:                         5.000 ms
+
+Iteration   3: 89810.903 ops/s
+                 ·class.load:                      15049.907 classes/sec
+                 ·class.load.norm:                 0.002 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   15.900 MB/sec
+                 ·gc.alloc.rate.norm:              198.440 B/op
+                 ·gc.churn.G1_Eden_Space:          343.932 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     4292.368 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.012 B/op
+                 ·gc.count:                        6.000 counts
+                 ·gc.time:                         5.000 ms
+
+
+
+Result "trile.ConcurrencyBenchmark.scope":
+  89818.325 ±(99.9%) 1923.629 ops/s [Average]
+  (min, avg, max) = (88055.079, 89818.325, 91381.994), stdev = 1144.721
+  CI (99.9%): [87894.696, 91741.954] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·class.load":
+  5038.317 ±(99.9%) 12700.126 classes/sec [Average]
+  (min, avg, max) = (≈ 0, 5038.317, 15230.478), stdev = 7557.641
+  CI (99.9%): [≈ 0, 17738.443] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·class.load.norm":
+  0.001 ±(99.9%) 0.001 classes/op [Average]
+  (min, avg, max) = (≈ 0, 0.001, 0.002), stdev = 0.001
+  CI (99.9%): [≈ 0, 0.002] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·class.unload":
+  ≈ 0 classes/sec
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·class.unload.norm":
+  ≈ 0 classes/op
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.alloc.rate":
+  203.060 ±(99.9%) 236.105 MB/sec [Average]
+  (min, avg, max) = (15.806, 203.060, 302.947), stdev = 140.502
+  CI (99.9%): [≈ 0, 439.165] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.alloc.rate.norm":
+  2495.635 ±(99.9%) 2896.572 B/op [Average]
+  (min, avg, max) = (198.139, 2495.635, 3731.917), stdev = 1723.703
+  CI (99.9%): [≈ 0, 5392.206] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.churn.G1_Eden_Space":
+  302.009 ±(99.9%) 38.170 MB/sec [Average]
+  (min, avg, max) = (286.457, 302.009, 343.932), stdev = 22.715
+  CI (99.9%): [263.839, 340.179] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.churn.G1_Eden_Space.norm":
+  3734.059 ±(99.9%) 513.215 B/op [Average]
+  (min, avg, max) = (3514.390, 3734.059, 4292.368), stdev = 305.406
+  CI (99.9%): [3220.845, 4247.274] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.churn.G1_Survivor_Space":
+  0.006 ±(99.9%) 0.013 MB/sec [Average]
+  (min, avg, max) = (≈ 10⁻³, 0.006, 0.023), stdev = 0.008
+  CI (99.9%): [≈ 0, 0.019] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.churn.G1_Survivor_Space.norm":
+  0.076 ±(99.9%) 0.162 B/op [Average]
+  (min, avg, max) = (0.004, 0.076, 0.287), stdev = 0.096
+  CI (99.9%): [≈ 0, 0.238] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.count":
+  47.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (5.000, 5.222, 6.000), stdev = 0.441
+  CI (99.9%): [47.000, 47.000] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.time":
+  40.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (3.000, 4.444, 6.000), stdev = 0.882
+  CI (99.9%): [40.000, 40.000] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -Xms1G -Xmx1G -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 10 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.scope
+# Parameters: (bufferSize = 128, numberEvent = 100, poolSize = 256)
+
+# Run progress: 75.00% complete, ETA 00:09:33
+# Fork: 1 of 3
+# Warmup Iteration   1: 49903.758 ops/s
+# Warmup Iteration   2: 52154.530 ops/s
+# Warmup Iteration   3: 50534.649 ops/s
+Iteration   1: 53126.109 ops/s
+                 ·class.load:                      10.012 classes/sec
+                 ·class.load.norm:                 ≈ 10⁻⁶ classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   166.862 MB/sec
+                 ·gc.alloc.rate.norm:              3462.887 B/op
+                 ·gc.churn.G1_Eden_Space:          173.899 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3608.918 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.019 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.391 B/op
+                 ·gc.count:                        3.000 counts
+                 ·gc.time:                         11.000 ms
+
+Iteration   2: 53516.431 ops/s
+                 ·class.load:                      40.027 classes/sec
+                 ·class.load.norm:                 ≈ 10⁻⁵ classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   167.961 MB/sec
+                 ·gc.alloc.rate.norm:              3459.564 B/op
+                 ·gc.churn.G1_Eden_Space:          174.350 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3591.155 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.300 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 6.176 B/op
+                 ·gc.count:                        3.000 counts
+                 ·gc.time:                         8.000 ms
+
+Iteration   3: 51650.043 ops/s
+                 ·class.load:                      15269.716 classes/sec
+                 ·class.load.norm:                 0.003 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   9.754 MB/sec
+                 ·gc.alloc.rate.norm:              214.551 B/op
+                 ·gc.churn.G1_Eden_Space:          169.603 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3730.670 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.002 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.050 B/op
+                 ·gc.count:                        3.000 counts
+                 ·gc.time:                         6.000 ms
+
+
+# Run progress: 77.78% complete, ETA 00:08:29
+# Fork: 2 of 3
+# Warmup Iteration   1: 51701.098 ops/s
+# Warmup Iteration   2: 55711.607 ops/s
+# Warmup Iteration   3: 53613.306 ops/s
+Iteration   1: 53666.797 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   168.383 MB/sec
+                 ·gc.alloc.rate.norm:              3458.305 B/op
+                 ·gc.churn.G1_Eden_Space:          173.978 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3573.220 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.010 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.206 B/op
+                 ·gc.count:                        3.000 counts
+                 ·gc.time:                         8.000 ms
+
+Iteration   2: 53835.560 ops/s
+                 ·class.load:                      40.056 classes/sec
+                 ·class.load.norm:                 ≈ 10⁻⁵ classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   169.019 MB/sec
+                 ·gc.alloc.rate.norm:              3462.222 B/op
+                 ·gc.churn.G1_Eden_Space:          174.138 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3567.095 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.289 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 5.918 B/op
+                 ·gc.count:                        3.000 counts
+                 ·gc.time:                         8.000 ms
+
+Iteration   3: 53847.782 ops/s
+                 ·class.load:                      15063.819 classes/sec
+                 ·class.load.norm:                 0.003 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   10.223 MB/sec
+                 ·gc.alloc.rate.norm:              212.963 B/op
+                 ·gc.churn.G1_Eden_Space:          171.810 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3578.950 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.004 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.082 B/op
+                 ·gc.count:                        3.000 counts
+                 ·gc.time:                         7.000 ms
+
+
+# Run progress: 80.56% complete, ETA 00:07:26
+# Fork: 3 of 3
+# Warmup Iteration   1: 49252.168 ops/s
+# Warmup Iteration   2: 54932.334 ops/s
+# Warmup Iteration   3: 53592.101 ops/s
+Iteration   1: 52244.855 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   164.314 MB/sec
+                 ·gc.alloc.rate.norm:              3466.458 B/op
+                 ·gc.churn.G1_Eden_Space:          174.096 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3672.837 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.014 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.286 B/op
+                 ·gc.count:                        3.000 counts
+                 ·gc.time:                         9.000 ms
+
+Iteration   2: 53565.193 ops/s
+                 ·class.load:                      40.064 classes/sec
+                 ·class.load.norm:                 ≈ 10⁻⁵ classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   168.014 MB/sec
+                 ·gc.alloc.rate.norm:              3458.703 B/op
+                 ·gc.churn.G1_Eden_Space:          174.210 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3586.246 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.287 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 5.915 B/op
+                 ·gc.count:                        3.000 counts
+                 ·gc.time:                         8.000 ms
+
+Iteration   3: 52956.415 ops/s
+                 ·class.load:                      15388.038 classes/sec
+                 ·class.load.norm:                 0.003 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   9.889 MB/sec
+                 ·gc.alloc.rate.norm:              213.568 B/op
+                 ·gc.churn.G1_Eden_Space:          168.419 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     3637.297 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.004 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.080 B/op
+                 ·gc.count:                        3.000 counts
+                 ·gc.time:                         5.000 ms
+
+
+
+Result "trile.ConcurrencyBenchmark.scope":
+  53156.576 ±(99.9%) 1279.429 ops/s [Average]
+  (min, avg, max) = (51650.043, 53156.576, 53847.782), stdev = 761.368
+  CI (99.9%): [51877.147, 54436.005] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·class.load":
+  5094.637 ±(99.9%) 12787.901 classes/sec [Average]
+  (min, avg, max) = (≈ 0, 5094.637, 15388.038), stdev = 7609.875
+  CI (99.9%): [≈ 0, 17882.538] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·class.load.norm":
+  0.001 ±(99.9%) 0.002 classes/op [Average]
+  (min, avg, max) = (≈ 0, 0.001, 0.003), stdev = 0.001
+  CI (99.9%): [≈ 0, 0.003] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·class.unload":
+  ≈ 0 classes/sec
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·class.unload.norm":
+  ≈ 0 classes/op
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.alloc.rate":
+  114.935 ±(99.9%) 132.328 MB/sec [Average]
+  (min, avg, max) = (9.754, 114.935, 169.019), stdev = 78.746
+  CI (99.9%): [≈ 0, 247.263] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.alloc.rate.norm":
+  2378.802 ±(99.9%) 2728.746 B/op [Average]
+  (min, avg, max) = (212.963, 2378.802, 3466.458), stdev = 1623.833
+  CI (99.9%): [≈ 0, 5107.548] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.churn.G1_Eden_Space":
+  172.722 ±(99.9%) 3.795 MB/sec [Average]
+  (min, avg, max) = (168.419, 172.722, 174.350), stdev = 2.258
+  CI (99.9%): [168.927, 176.518] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.churn.G1_Eden_Space.norm":
+  3616.265 ±(99.9%) 92.003 B/op [Average]
+  (min, avg, max) = (3567.095, 3616.265, 3730.670), stdev = 54.749
+  CI (99.9%): [3524.262, 3708.268] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.churn.G1_Survivor_Space":
+  0.103 ±(99.9%) 0.238 MB/sec [Average]
+  (min, avg, max) = (0.002, 0.103, 0.300), stdev = 0.142
+  CI (99.9%): [≈ 0, 0.341] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.churn.G1_Survivor_Space.norm":
+  2.123 ±(99.9%) 4.895 B/op [Average]
+  (min, avg, max) = (0.050, 2.123, 6.176), stdev = 2.913
+  CI (99.9%): [≈ 0, 7.018] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.count":
+  27.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (3.000, 3.000, 3.000), stdev = 0.001
+  CI (99.9%): [27.000, 27.000] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.time":
+  70.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (5.000, 7.778, 11.000), stdev = 1.716
+  CI (99.9%): [70.000, 70.000] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -Xms1G -Xmx1G -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 10 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.scope
+# Parameters: (bufferSize = 128, numberEvent = 1000000, poolSize = 64)
+
+# Run progress: 83.33% complete, ETA 00:06:22
+# Fork: 1 of 3
+# Warmup Iteration   1: 15.472 ops/s
+# Warmup Iteration   2: 16.357 ops/s
+# Warmup Iteration   3: 16.064 ops/s
+Iteration   1: 16.000 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   383.222 MB/sec
+                 ·gc.alloc.rate.norm:              26396426.882 B/op
+                 ·gc.churn.G1_Eden_Space:          347.770 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     23954425.640 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.007 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 503.752 B/op
+                 ·gc.count:                        6.000 counts
+                 ·gc.time:                         7.000 ms
+
+Iteration   2: 15.925 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   381.558 MB/sec
+                 ·gc.alloc.rate.norm:              26405293.100 B/op
+                 ·gc.churn.G1_Eden_Space:          406.357 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     28121497.600 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 60.000 B/op
+                 ·gc.count:                        7.000 counts
+                 ·gc.time:                         8.000 ms
+
+Iteration   3: 15.895 ops/s
+                 ·class.load:                      15153.640 classes/sec
+                 ·class.load.norm:                 9.238 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   1.773 MB/sec
+                 ·gc.alloc.rate.norm:              125067.650 B/op
+                 ·gc.churn.G1_Eden_Space:          398.628 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     28121497.600 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 37.700 B/op
+                 ·gc.count:                        7.000 counts
+                 ·gc.time:                         8.000 ms
+
+
+# Run progress: 86.11% complete, ETA 00:05:18
+# Fork: 2 of 3
+# Warmup Iteration   1: 15.470 ops/s
+# Warmup Iteration   2: 13.997 ops/s
+# Warmup Iteration   3: 15.022 ops/s
+Iteration   1: 15.684 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   379.727 MB/sec
+                 ·gc.alloc.rate.norm:              26698906.497 B/op
+                 ·gc.churn.G1_Eden_Space:          349.373 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     24564729.478 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.007 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 518.115 B/op
+                 ·gc.count:                        6.000 counts
+                 ·gc.time:                         7.000 ms
+
+Iteration   2: 15.530 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   376.646 MB/sec
+                 ·gc.alloc.rate.norm:              26727211.231 B/op
+                 ·gc.churn.G1_Eden_Space:          406.456 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     28842561.641 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 69.949 B/op
+                 ·gc.count:                        7.000 counts
+                 ·gc.time:                         9.000 ms
+
+Iteration   3: 15.658 ops/s
+                 ·class.load:                      15306.475 classes/sec
+                 ·class.load.norm:                 9.414 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   1.756 MB/sec
+                 ·gc.alloc.rate.norm:              127461.045 B/op
+                 ·gc.churn.G1_Eden_Space:          394.820 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     28658851.057 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 76.943 B/op
+                 ·gc.count:                        7.000 counts
+                 ·gc.time:                         7.000 ms
+
+
+# Run progress: 88.89% complete, ETA 00:04:14
+# Fork: 3 of 3
+# Warmup Iteration   1: 15.931 ops/s
+# Warmup Iteration   2: 15.826 ops/s
+# Warmup Iteration   3: 15.669 ops/s
+Iteration   1: 15.594 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   382.120 MB/sec
+                 ·gc.alloc.rate.norm:              27003869.656 B/op
+                 ·gc.churn.G1_Eden_Space:          347.604 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     24564729.478 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.007 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 496.662 B/op
+                 ·gc.count:                        6.000 counts
+                 ·gc.time:                         7.000 ms
+
+Iteration   2: 15.676 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   383.547 MB/sec
+                 ·gc.alloc.rate.norm:              26970469.146 B/op
+                 ·gc.churn.G1_Eden_Space:          407.558 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     28658851.057 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 87.439 B/op
+                 ·gc.count:                        7.000 counts
+                 ·gc.time:                         8.000 ms
+
+Iteration   3: 15.778 ops/s
+                 ·class.load:                      15075.191 classes/sec
+                 ·class.load.norm:                 9.354 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   1.782 MB/sec
+                 ·gc.alloc.rate.norm:              126695.949 B/op
+                 ·gc.churn.G1_Eden_Space:          400.603 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     28477465.873 B/op
+                 ·gc.churn.G1_Survivor_Space:      ≈ 10⁻⁴ MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 8.304 B/op
+                 ·gc.count:                        7.000 counts
+                 ·gc.time:                         8.000 ms
+
+
+
+Result "trile.ConcurrencyBenchmark.scope":
+  15.749 ±(99.9%) 0.269 ops/s [Average]
+  (min, avg, max) = (15.530, 15.749, 16.000), stdev = 0.160
+  CI (99.9%): [15.480, 16.018] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·class.load":
+  5059.479 ±(99.9%) 12753.571 classes/sec [Average]
+  (min, avg, max) = (≈ 0, 5059.479, 15306.475), stdev = 7589.446
+  CI (99.9%): [≈ 0, 17813.050] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·class.load.norm":
+  3.112 ±(99.9%) 7.844 classes/op [Average]
+  (min, avg, max) = (≈ 0, 3.112, 9.414), stdev = 4.668
+  CI (99.9%): [≈ 0, 10.956] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·class.unload":
+  ≈ 0 classes/sec
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·class.unload.norm":
+  ≈ 0 classes/op
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.alloc.rate":
+  254.681 ±(99.9%) 318.769 MB/sec [Average]
+  (min, avg, max) = (1.756, 254.681, 383.547), stdev = 189.694
+  CI (99.9%): [≈ 0, 573.450] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.alloc.rate.norm":
+  17842377.906 ±(99.9%) 22330632.380 B/op [Average]
+  (min, avg, max) = (125067.650, 17842377.906, 27003869.656), stdev = 13288601.142
+  CI (99.9%): [≈ 0, 40173010.286] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.churn.G1_Eden_Space":
+  384.352 ±(99.9%) 46.024 MB/sec [Average]
+  (min, avg, max) = (347.604, 384.352, 407.558), stdev = 27.388
+  CI (99.9%): [338.328, 430.377] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.churn.G1_Eden_Space.norm":
+  27107178.825 ±(99.9%) 3496266.811 B/op [Average]
+  (min, avg, max) = (23954425.640, 27107178.825, 28842561.641), stdev = 2080572.299
+  CI (99.9%): [23610912.014, 30603445.636] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.churn.G1_Survivor_Space":
+  0.003 ±(99.9%) 0.005 MB/sec [Average]
+  (min, avg, max) = (≈ 10⁻⁴, 0.003, 0.007), stdev = 0.003
+  CI (99.9%): [≈ 0, 0.008] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.churn.G1_Survivor_Space.norm":
+  206.540 ±(99.9%) 379.728 B/op [Average]
+  (min, avg, max) = (8.304, 206.540, 518.115), stdev = 225.970
+  CI (99.9%): [≈ 0, 586.269] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.count":
+  60.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (6.000, 6.667, 7.000), stdev = 0.500
+  CI (99.9%): [60.000, 60.000] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.time":
+  69.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (7.000, 7.667, 9.000), stdev = 0.707
+  CI (99.9%): [69.000, 69.000] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.5, OpenJDK 64-Bit Server VM, 17.0.5+0
+# VM invoker: /opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Xms256M -Xmx256M -Xms1G -Xmx1G -XX:+UseG1GC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 10 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: trile.ConcurrencyBenchmark.scope
+# Parameters: (bufferSize = 128, numberEvent = 1000000, poolSize = 256)
+
+# Run progress: 91.67% complete, ETA 00:03:11
+# Fork: 1 of 3
+# Warmup Iteration   1: 13.645 ops/s
+# Warmup Iteration   2: 14.282 ops/s
+# Warmup Iteration   3: 14.074 ops/s
+Iteration   1: 14.004 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   332.951 MB/sec
+                 ·gc.alloc.rate.norm:              26201438.865 B/op
+                 ·gc.churn.G1_Eden_Space:          347.574 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     27352216.511 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.007 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 563.177 B/op
+                 ·gc.count:                        6.000 counts
+                 ·gc.time:                         15.000 ms
+
+Iteration   2: 13.951 ops/s
+                 ·class.load:                      10.039 classes/sec
+                 ·class.load.norm:                 0.007 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   331.553 MB/sec
+                 ·gc.alloc.rate.norm:              26198674.514 B/op
+                 ·gc.churn.G1_Eden_Space:          348.624 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     27547589.486 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 93.600 B/op
+                 ·gc.count:                        6.000 counts
+                 ·gc.time:                         16.000 ms
+
+Iteration   3: 13.644 ops/s
+                 ·class.load:                      15367.348 classes/sec
+                 ·class.load.norm:                 10.788 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   1.747 MB/sec
+                 ·gc.alloc.rate.norm:              145884.905 B/op
+                 ·gc.churn.G1_Eden_Space:          337.156 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     28150821.372 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 80.584 B/op
+                 ·gc.count:                        6.000 counts
+                 ·gc.time:                         15.000 ms
+
+
+# Run progress: 94.44% complete, ETA 00:02:07
+# Fork: 2 of 3
+# Warmup Iteration   1: 13.368 ops/s
+# Warmup Iteration   2: 13.973 ops/s
+# Warmup Iteration   3: 13.854 ops/s
+Iteration   1: 13.628 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   324.324 MB/sec
+                 ·gc.alloc.rate.norm:              26225519.182 B/op
+                 ·gc.churn.G1_Eden_Space:          290.112 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     23459017.635 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.008 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 650.394 B/op
+                 ·gc.count:                        5.000 counts
+                 ·gc.time:                         13.000 ms
+
+Iteration   2: 13.690 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   325.741 MB/sec
+                 ·gc.alloc.rate.norm:              26216211.188 B/op
+                 ·gc.churn.G1_Eden_Space:          347.244 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     27946829.855 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 54.609 B/op
+                 ·gc.count:                        6.000 counts
+                 ·gc.time:                         15.000 ms
+
+Iteration   3: 13.630 ops/s
+                 ·class.load:                      15134.654 classes/sec
+                 ·class.load.norm:                 10.788 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   1.772 MB/sec
+                 ·gc.alloc.rate.norm:              145847.066 B/op
+                 ·gc.churn.G1_Eden_Space:          342.088 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     28150821.314 B/op
+                 ·gc.churn.G1_Survivor_Space:      ≈ 10⁻³ MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 30.131 B/op
+                 ·gc.count:                        6.000 counts
+                 ·gc.time:                         16.000 ms
+
+
+# Run progress: 97.22% complete, ETA 00:01:03
+# Fork: 3 of 3
+# Warmup Iteration   1: 13.695 ops/s
+# Warmup Iteration   2: 14.069 ops/s
+# Warmup Iteration   3: 13.937 ops/s
+Iteration   1: 14.006 ops/s
+                 ·class.load:                      10.069 classes/sec
+                 ·class.load.norm:                 0.007 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   332.969 MB/sec
+                 ·gc.alloc.rate.norm:              26199350.298 B/op
+                 ·gc.churn.G1_Eden_Space:          347.620 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     27352216.511 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.007 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 567.433 B/op
+                 ·gc.count:                        6.000 counts
+                 ·gc.time:                         15.000 ms
+
+Iteration   2: 14.042 ops/s
+                 ·class.load:                      ≈ 0 classes/sec
+                 ·class.load.norm:                 ≈ 0 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   333.874 MB/sec
+                 ·gc.alloc.rate.norm:              26210914.723 B/op
+                 ·gc.churn.G1_Eden_Space:          348.412 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     27352216.511 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 78.298 B/op
+                 ·gc.count:                        6.000 counts
+                 ·gc.time:                         13.000 ms
+
+Iteration   3: 14.033 ops/s
+                 ·class.load:                      15435.920 classes/sec
+                 ·class.load.norm:                 10.482 classes/op
+                 ·class.unload:                    ≈ 0 classes/sec
+                 ·class.unload.norm:               ≈ 0 classes/op
+                 ·gc.alloc.rate:                   1.739 MB/sec
+                 ·gc.alloc.rate.norm:              141709.957 B/op
+                 ·gc.churn.G1_Eden_Space:          335.724 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     27352216.454 B/op
+                 ·gc.churn.G1_Survivor_Space:      ≈ 10⁻³ MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 29.277 B/op
+                 ·gc.count:                        6.000 counts
+                 ·gc.time:                         14.000 ms
+
+
+
+Result "trile.ConcurrencyBenchmark.scope":
+  13.848 ±(99.9%) 0.322 ops/s [Average]
+  (min, avg, max) = (13.628, 13.848, 14.042), stdev = 0.192
+  CI (99.9%): [13.525, 14.170] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·class.load":
+  5106.448 ±(99.9%) 12863.820 classes/sec [Average]
+  (min, avg, max) = (≈ 0, 5106.448, 15435.920), stdev = 7655.053
+  CI (99.9%): [≈ 0, 17970.268] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·class.load.norm":
+  3.564 ±(99.9%) 8.978 classes/op [Average]
+  (min, avg, max) = (≈ 0, 3.564, 10.788), stdev = 5.343
+  CI (99.9%): [≈ 0, 12.542] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·class.unload":
+  ≈ 0 classes/sec
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·class.unload.norm":
+  ≈ 0 classes/op
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.alloc.rate":
+  220.741 ±(99.9%) 276.051 MB/sec [Average]
+  (min, avg, max) = (1.739, 220.741, 333.874), stdev = 164.273
+  CI (99.9%): [≈ 0, 496.792] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.alloc.rate.norm":
+  17520616.744 ±(99.9%) 21899607.141 B/op [Average]
+  (min, avg, max) = (141709.957, 17520616.744, 26225519.182), stdev = 13032104.936
+  CI (99.9%): [≈ 0, 39420223.886] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.churn.G1_Eden_Space":
+  338.284 ±(99.9%) 31.472 MB/sec [Average]
+  (min, avg, max) = (290.112, 338.284, 348.624), stdev = 18.729
+  CI (99.9%): [306.811, 369.756] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.churn.G1_Eden_Space.norm":
+  27184882.850 ±(99.9%) 2418620.499 B/op [Average]
+  (min, avg, max) = (23459017.635, 27184882.850, 28150821.372), stdev = 1439282.264
+  CI (99.9%): [24766262.351, 29603503.349] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.churn.G1_Survivor_Space":
+  0.003 ±(99.9%) 0.006 MB/sec [Average]
+  (min, avg, max) = (≈ 10⁻³, 0.003, 0.008), stdev = 0.003
+  CI (99.9%): [≈ 0, 0.009] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.churn.G1_Survivor_Space.norm":
+  238.611 ±(99.9%) 450.859 B/op [Average]
+  (min, avg, max) = (29.277, 238.611, 650.394), stdev = 268.299
+  CI (99.9%): [≈ 0, 689.470] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.count":
+  53.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (5.000, 5.889, 6.000), stdev = 0.333
+  CI (99.9%): [53.000, 53.000] (assumes normal distribution)
+
+Secondary result "trile.ConcurrencyBenchmark.scope:·gc.time":
+  132.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (13.000, 14.667, 16.000), stdev = 1.118
+  CI (99.9%): [132.000, 132.000] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:38:14
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                                        (bufferSize)  (numberEvent)  (poolSize)   Mode  Cnt         Score          Error        Units
+ConcurrencyBenchmark.coroutine                                            128            100          64  thrpt    9    304663.189 ±     1475.720        ops/s
+ConcurrencyBenchmark.coroutine:·class.load                                128            100          64  thrpt    9      5060.781 ±    12756.951  classes/sec
+ConcurrencyBenchmark.coroutine:·class.load.norm                           128            100          64  thrpt    9        ≈ 10⁻⁴                  classes/op
+ConcurrencyBenchmark.coroutine:·class.unload                              128            100          64  thrpt    9           ≈ 0                 classes/sec
+ConcurrencyBenchmark.coroutine:·class.unload.norm                         128            100          64  thrpt    9           ≈ 0                  classes/op
+ConcurrencyBenchmark.coroutine:·gc.alloc.rate                             128            100          64  thrpt    9       977.276 ±       19.132       MB/sec
+ConcurrencyBenchmark.coroutine:·gc.alloc.rate.norm                        128            100          64  thrpt    9      3562.306 ±        5.446         B/op
+ConcurrencyBenchmark.coroutine:·gc.churn.G1_Eden_Space                    128            100          64  thrpt    9       982.964 ±       20.656       MB/sec
+ConcurrencyBenchmark.coroutine:·gc.churn.G1_Eden_Space.norm               128            100          64  thrpt    9      3583.019 ±       16.989         B/op
+ConcurrencyBenchmark.coroutine:·gc.churn.G1_Survivor_Space                128            100          64  thrpt    9         0.002 ±        0.001       MB/sec
+ConcurrencyBenchmark.coroutine:·gc.churn.G1_Survivor_Space.norm           128            100          64  thrpt    9         0.009 ±        0.004         B/op
+ConcurrencyBenchmark.coroutine:·gc.count                                  128            100          64  thrpt    9       153.000                      counts
+ConcurrencyBenchmark.coroutine:·gc.time                                   128            100          64  thrpt    9       128.000                          ms
+ConcurrencyBenchmark.coroutine                                            128            100         256  thrpt    9    308070.922 ±     9772.881        ops/s
+ConcurrencyBenchmark.coroutine:·class.load                                128            100         256  thrpt    9      5074.573 ±    12791.596  classes/sec
+ConcurrencyBenchmark.coroutine:·class.load.norm                           128            100         256  thrpt    9        ≈ 10⁻⁴                  classes/op
+ConcurrencyBenchmark.coroutine:·class.unload                              128            100         256  thrpt    9           ≈ 0                 classes/sec
+ConcurrencyBenchmark.coroutine:·class.unload.norm                         128            100         256  thrpt    9           ≈ 0                  classes/op
+ConcurrencyBenchmark.coroutine:·gc.alloc.rate                             128            100         256  thrpt    9       987.168 ±       37.838       MB/sec
+ConcurrencyBenchmark.coroutine:·gc.alloc.rate.norm                        128            100         256  thrpt    9      3562.292 ±        5.414         B/op
+ConcurrencyBenchmark.coroutine:·gc.churn.G1_Eden_Space                    128            100         256  thrpt    9       994.945 ±       43.316       MB/sec
+ConcurrencyBenchmark.coroutine:·gc.churn.G1_Eden_Space.norm               128            100         256  thrpt    9      3590.474 ±       88.551         B/op
+ConcurrencyBenchmark.coroutine:·gc.churn.G1_Survivor_Space                128            100         256  thrpt    9         0.003 ±        0.001       MB/sec
+ConcurrencyBenchmark.coroutine:·gc.churn.G1_Survivor_Space.norm           128            100         256  thrpt    9         0.009 ±        0.004         B/op
+ConcurrencyBenchmark.coroutine:·gc.count                                  128            100         256  thrpt    9       155.000                      counts
+ConcurrencyBenchmark.coroutine:·gc.time                                   128            100         256  thrpt    9       130.000                          ms
+ConcurrencyBenchmark.coroutine                                            128        1000000          64  thrpt    9        36.229 ±        0.614        ops/s
+ConcurrencyBenchmark.coroutine:·class.load                                128        1000000          64  thrpt    9      5051.872 ±    12734.473  classes/sec
+ConcurrencyBenchmark.coroutine:·class.load.norm                           128        1000000          64  thrpt    9         1.360 ±        3.428   classes/op
+ConcurrencyBenchmark.coroutine:·class.unload                              128        1000000          64  thrpt    9           ≈ 0                 classes/sec
+ConcurrencyBenchmark.coroutine:·class.unload.norm                         128        1000000          64  thrpt    9           ≈ 0                  classes/op
+ConcurrencyBenchmark.coroutine:·gc.alloc.rate                             128        1000000          64  thrpt    9       826.210 ±       20.764       MB/sec
+ConcurrencyBenchmark.coroutine:·gc.alloc.rate.norm                        128        1000000          64  thrpt    9  25313274.827 ±    45881.241         B/op
+ConcurrencyBenchmark.coroutine:·gc.churn.G1_Eden_Space                    128        1000000          64  thrpt    9       828.854 ±       47.842       MB/sec
+ConcurrencyBenchmark.coroutine:·gc.churn.G1_Eden_Space.norm               128        1000000          64  thrpt    9  25396336.220 ±  1435373.579         B/op
+ConcurrencyBenchmark.coroutine:·gc.churn.G1_Survivor_Space                128        1000000          64  thrpt    9         0.001 ±        0.001       MB/sec
+ConcurrencyBenchmark.coroutine:·gc.churn.G1_Survivor_Space.norm           128        1000000          64  thrpt    9        41.342 ±       13.055         B/op
+ConcurrencyBenchmark.coroutine:·gc.count                                  128        1000000          64  thrpt    9       129.000                      counts
+ConcurrencyBenchmark.coroutine:·gc.time                                   128        1000000          64  thrpt    9       108.000                          ms
+ConcurrencyBenchmark.coroutine                                            128        1000000         256  thrpt    9        36.574 ±        0.374        ops/s
+ConcurrencyBenchmark.coroutine:·class.load                                128        1000000         256  thrpt    9      5091.188 ±    12833.776  classes/sec
+ConcurrencyBenchmark.coroutine:·class.load.norm                           128        1000000         256  thrpt    9         1.341 ±        3.381   classes/op
+ConcurrencyBenchmark.coroutine:·class.unload                              128        1000000         256  thrpt    9           ≈ 0                 classes/sec
+ConcurrencyBenchmark.coroutine:·class.unload.norm                         128        1000000         256  thrpt    9           ≈ 0                  classes/op
+ConcurrencyBenchmark.coroutine:·gc.alloc.rate                             128        1000000         256  thrpt    9       832.407 ±       21.206       MB/sec
+ConcurrencyBenchmark.coroutine:·gc.alloc.rate.norm                        128        1000000         256  thrpt    9  25313027.222 ±    45246.357         B/op
+ConcurrencyBenchmark.coroutine:·gc.churn.G1_Eden_Space                    128        1000000         256  thrpt    9       839.321 ±       53.438       MB/sec
+ConcurrencyBenchmark.coroutine:·gc.churn.G1_Eden_Space.norm               128        1000000         256  thrpt    9  25525823.665 ±  1622128.284         B/op
+ConcurrencyBenchmark.coroutine:·gc.churn.G1_Survivor_Space                128        1000000         256  thrpt    9         0.001 ±        0.001       MB/sec
+ConcurrencyBenchmark.coroutine:·gc.churn.G1_Survivor_Space.norm           128        1000000         256  thrpt    9        41.213 ±       12.689         B/op
+ConcurrencyBenchmark.coroutine:·gc.count                                  128        1000000         256  thrpt    9       131.000                      counts
+ConcurrencyBenchmark.coroutine:·gc.time                                   128        1000000         256  thrpt    9       112.000                          ms
+ConcurrencyBenchmark.disruptor                                            128            100          64  thrpt    9     44701.210 ±     1832.382        ops/s
+ConcurrencyBenchmark.disruptor:·class.load                                128            100          64  thrpt    9      5070.443 ±    12781.068  classes/sec
+ConcurrencyBenchmark.disruptor:·class.load.norm                           128            100          64  thrpt    9         0.001 ±        0.003   classes/op
+ConcurrencyBenchmark.disruptor:·class.unload                              128            100          64  thrpt    9           ≈ 0                 classes/sec
+ConcurrencyBenchmark.disruptor:·class.unload.norm                         128            100          64  thrpt    9           ≈ 0                  classes/op
+ConcurrencyBenchmark.disruptor:·gc.alloc.rate                             128            100          64  thrpt    9         8.971 ±        1.888       MB/sec
+ConcurrencyBenchmark.disruptor:·gc.alloc.rate.norm                        128            100          64  thrpt    9       222.744 ±       43.793         B/op
+ConcurrencyBenchmark.disruptor:·gc.count                                  128            100          64  thrpt    9           ≈ 0                      counts
+ConcurrencyBenchmark.disruptor                                            128            100         256  thrpt    9    111480.280 ±     2634.425        ops/s
+ConcurrencyBenchmark.disruptor:·class.load                                128            100         256  thrpt    9      5102.152 ±    12861.413  classes/sec
+ConcurrencyBenchmark.disruptor:·class.load.norm                           128            100         256  thrpt    9        ≈ 10⁻³                  classes/op
+ConcurrencyBenchmark.disruptor:·class.unload                              128            100         256  thrpt    9           ≈ 0                 classes/sec
+ConcurrencyBenchmark.disruptor:·class.unload.norm                         128            100         256  thrpt    9           ≈ 0                  classes/op
+ConcurrencyBenchmark.disruptor:·gc.alloc.rate                             128            100         256  thrpt    9        19.438 ±        4.548       MB/sec
+ConcurrencyBenchmark.disruptor:·gc.alloc.rate.norm                        128            100         256  thrpt    9       193.612 ±       40.019         B/op
+ConcurrencyBenchmark.disruptor:·gc.churn.G1_Eden_Space                    128            100         256  thrpt    9        31.955 ±       50.954       MB/sec
+ConcurrencyBenchmark.disruptor:·gc.churn.G1_Eden_Space.norm               128            100         256  thrpt    9       317.294 ±      505.859         B/op
+ConcurrencyBenchmark.disruptor:·gc.churn.G1_Survivor_Space                128            100         256  thrpt    9         0.004 ±        0.013       MB/sec
+ConcurrencyBenchmark.disruptor:·gc.churn.G1_Survivor_Space.norm           128            100         256  thrpt    9         0.038 ±        0.128         B/op
+ConcurrencyBenchmark.disruptor:·gc.count                                  128            100         256  thrpt    9         5.000                      counts
+ConcurrencyBenchmark.disruptor:·gc.time                                   128            100         256  thrpt    9         9.000                          ms
+ConcurrencyBenchmark.disruptor                                            128        1000000          64  thrpt    9         4.529 ±        0.104        ops/s
+ConcurrencyBenchmark.disruptor:·class.load                                128        1000000          64  thrpt    9      5133.415 ±    12941.506  classes/sec
+ConcurrencyBenchmark.disruptor:·class.load.norm                           128        1000000          64  thrpt    9        10.670 ±       26.898   classes/op
+ConcurrencyBenchmark.disruptor:·class.unload                              128        1000000          64  thrpt    9           ≈ 0                 classes/sec
+ConcurrencyBenchmark.disruptor:·class.unload.norm                         128        1000000          64  thrpt    9           ≈ 0                  classes/op
+ConcurrencyBenchmark.disruptor:·gc.alloc.rate                             128        1000000          64  thrpt    9        67.441 ±       82.824       MB/sec
+ConcurrencyBenchmark.disruptor:·gc.alloc.rate.norm                        128        1000000          64  thrpt    9  16476548.753 ± 20225242.569         B/op
+ConcurrencyBenchmark.disruptor:·gc.churn.G1_Eden_Space                    128        1000000          64  thrpt    9       107.717 ±       32.551       MB/sec
+ConcurrencyBenchmark.disruptor:·gc.churn.G1_Eden_Space.norm               128        1000000          64  thrpt    9  26379819.477 ±  7870718.875         B/op
+ConcurrencyBenchmark.disruptor:·gc.churn.G1_Survivor_Space                128        1000000          64  thrpt    9         0.006 ±        0.013       MB/sec
+ConcurrencyBenchmark.disruptor:·gc.churn.G1_Survivor_Space.norm           128        1000000          64  thrpt    9      1556.366 ±     3163.975         B/op
+ConcurrencyBenchmark.disruptor:·gc.count                                  128        1000000          64  thrpt    9        17.000                      counts
+ConcurrencyBenchmark.disruptor:·gc.time                                   128        1000000          64  thrpt    9        34.000                          ms
+ConcurrencyBenchmark.disruptor                                            128        1000000         256  thrpt    9        16.507 ±        2.010        ops/s
+ConcurrencyBenchmark.disruptor:·class.load                                128        1000000         256  thrpt    9      5104.534 ±    12867.364  classes/sec
+ConcurrencyBenchmark.disruptor:·class.load.norm                           128        1000000         256  thrpt    9         3.005 ±        7.605   classes/op
+ConcurrencyBenchmark.disruptor:·class.unload                              128        1000000         256  thrpt    9           ≈ 0                 classes/sec
+ConcurrencyBenchmark.disruptor:·class.unload.norm                         128        1000000         256  thrpt    9           ≈ 0                  classes/op
+ConcurrencyBenchmark.disruptor:·gc.alloc.rate                             128        1000000         256  thrpt    9       246.460 ±      311.322       MB/sec
+ConcurrencyBenchmark.disruptor:·gc.alloc.rate.norm                        128        1000000         256  thrpt    9  16425998.558 ± 20553710.479         B/op
+ConcurrencyBenchmark.disruptor:·gc.churn.G1_Eden_Space                    128        1000000         256  thrpt    9       364.783 ±       69.201       MB/sec
+ConcurrencyBenchmark.disruptor:·gc.churn.G1_Eden_Space.norm               128        1000000         256  thrpt    9  24542961.797 ±  2857048.170         B/op
+ConcurrencyBenchmark.disruptor:·gc.churn.G1_Survivor_Space                128        1000000         256  thrpt    9         0.003 ±        0.005       MB/sec
+ConcurrencyBenchmark.disruptor:·gc.churn.G1_Survivor_Space.norm           128        1000000         256  thrpt    9       196.007 ±      354.598         B/op
+ConcurrencyBenchmark.disruptor:·gc.count                                  128        1000000         256  thrpt    9        57.000                      counts
+ConcurrencyBenchmark.disruptor:·gc.time                                   128        1000000         256  thrpt    9        54.000                          ms
+ConcurrencyBenchmark.scope                                                128            100          64  thrpt    9     89818.325 ±     1923.629        ops/s
+ConcurrencyBenchmark.scope:·class.load                                    128            100          64  thrpt    9      5038.317 ±    12700.126  classes/sec
+ConcurrencyBenchmark.scope:·class.load.norm                               128            100          64  thrpt    9         0.001 ±        0.001   classes/op
+ConcurrencyBenchmark.scope:·class.unload                                  128            100          64  thrpt    9           ≈ 0                 classes/sec
+ConcurrencyBenchmark.scope:·class.unload.norm                             128            100          64  thrpt    9           ≈ 0                  classes/op
+ConcurrencyBenchmark.scope:·gc.alloc.rate                                 128            100          64  thrpt    9       203.060 ±      236.105       MB/sec
+ConcurrencyBenchmark.scope:·gc.alloc.rate.norm                            128            100          64  thrpt    9      2495.635 ±     2896.572         B/op
+ConcurrencyBenchmark.scope:·gc.churn.G1_Eden_Space                        128            100          64  thrpt    9       302.009 ±       38.170       MB/sec
+ConcurrencyBenchmark.scope:·gc.churn.G1_Eden_Space.norm                   128            100          64  thrpt    9      3734.059 ±      513.215         B/op
+ConcurrencyBenchmark.scope:·gc.churn.G1_Survivor_Space                    128            100          64  thrpt    9         0.006 ±        0.013       MB/sec
+ConcurrencyBenchmark.scope:·gc.churn.G1_Survivor_Space.norm               128            100          64  thrpt    9         0.076 ±        0.162         B/op
+ConcurrencyBenchmark.scope:·gc.count                                      128            100          64  thrpt    9        47.000                      counts
+ConcurrencyBenchmark.scope:·gc.time                                       128            100          64  thrpt    9        40.000                          ms
+ConcurrencyBenchmark.scope                                                128            100         256  thrpt    9     53156.576 ±     1279.429        ops/s
+ConcurrencyBenchmark.scope:·class.load                                    128            100         256  thrpt    9      5094.637 ±    12787.901  classes/sec
+ConcurrencyBenchmark.scope:·class.load.norm                               128            100         256  thrpt    9         0.001 ±        0.002   classes/op
+ConcurrencyBenchmark.scope:·class.unload                                  128            100         256  thrpt    9           ≈ 0                 classes/sec
+ConcurrencyBenchmark.scope:·class.unload.norm                             128            100         256  thrpt    9           ≈ 0                  classes/op
+ConcurrencyBenchmark.scope:·gc.alloc.rate                                 128            100         256  thrpt    9       114.935 ±      132.328       MB/sec
+ConcurrencyBenchmark.scope:·gc.alloc.rate.norm                            128            100         256  thrpt    9      2378.802 ±     2728.746         B/op
+ConcurrencyBenchmark.scope:·gc.churn.G1_Eden_Space                        128            100         256  thrpt    9       172.722 ±        3.795       MB/sec
+ConcurrencyBenchmark.scope:·gc.churn.G1_Eden_Space.norm                   128            100         256  thrpt    9      3616.265 ±       92.003         B/op
+ConcurrencyBenchmark.scope:·gc.churn.G1_Survivor_Space                    128            100         256  thrpt    9         0.103 ±        0.238       MB/sec
+ConcurrencyBenchmark.scope:·gc.churn.G1_Survivor_Space.norm               128            100         256  thrpt    9         2.123 ±        4.895         B/op
+ConcurrencyBenchmark.scope:·gc.count                                      128            100         256  thrpt    9        27.000                      counts
+ConcurrencyBenchmark.scope:·gc.time                                       128            100         256  thrpt    9        70.000                          ms
+ConcurrencyBenchmark.scope                                                128        1000000          64  thrpt    9        15.749 ±        0.269        ops/s
+ConcurrencyBenchmark.scope:·class.load                                    128        1000000          64  thrpt    9      5059.479 ±    12753.571  classes/sec
+ConcurrencyBenchmark.scope:·class.load.norm                               128        1000000          64  thrpt    9         3.112 ±        7.844   classes/op
+ConcurrencyBenchmark.scope:·class.unload                                  128        1000000          64  thrpt    9           ≈ 0                 classes/sec
+ConcurrencyBenchmark.scope:·class.unload.norm                             128        1000000          64  thrpt    9           ≈ 0                  classes/op
+ConcurrencyBenchmark.scope:·gc.alloc.rate                                 128        1000000          64  thrpt    9       254.681 ±      318.769       MB/sec
+ConcurrencyBenchmark.scope:·gc.alloc.rate.norm                            128        1000000          64  thrpt    9  17842377.906 ± 22330632.380         B/op
+ConcurrencyBenchmark.scope:·gc.churn.G1_Eden_Space                        128        1000000          64  thrpt    9       384.352 ±       46.024       MB/sec
+ConcurrencyBenchmark.scope:·gc.churn.G1_Eden_Space.norm                   128        1000000          64  thrpt    9  27107178.825 ±  3496266.811         B/op
+ConcurrencyBenchmark.scope:·gc.churn.G1_Survivor_Space                    128        1000000          64  thrpt    9         0.003 ±        0.005       MB/sec
+ConcurrencyBenchmark.scope:·gc.churn.G1_Survivor_Space.norm               128        1000000          64  thrpt    9       206.540 ±      379.728         B/op
+ConcurrencyBenchmark.scope:·gc.count                                      128        1000000          64  thrpt    9        60.000                      counts
+ConcurrencyBenchmark.scope:·gc.time                                       128        1000000          64  thrpt    9        69.000                          ms
+ConcurrencyBenchmark.scope                                                128        1000000         256  thrpt    9        13.848 ±        0.322        ops/s
+ConcurrencyBenchmark.scope:·class.load                                    128        1000000         256  thrpt    9      5106.448 ±    12863.820  classes/sec
+ConcurrencyBenchmark.scope:·class.load.norm                               128        1000000         256  thrpt    9         3.564 ±        8.978   classes/op
+ConcurrencyBenchmark.scope:·class.unload                                  128        1000000         256  thrpt    9           ≈ 0                 classes/sec
+ConcurrencyBenchmark.scope:·class.unload.norm                             128        1000000         256  thrpt    9           ≈ 0                  classes/op
+ConcurrencyBenchmark.scope:·gc.alloc.rate                                 128        1000000         256  thrpt    9       220.741 ±      276.051       MB/sec
+ConcurrencyBenchmark.scope:·gc.alloc.rate.norm                            128        1000000         256  thrpt    9  17520616.744 ± 21899607.141         B/op
+ConcurrencyBenchmark.scope:·gc.churn.G1_Eden_Space                        128        1000000         256  thrpt    9       338.284 ±       31.472       MB/sec
+ConcurrencyBenchmark.scope:·gc.churn.G1_Eden_Space.norm                   128        1000000         256  thrpt    9  27184882.850 ±  2418620.499         B/op
+ConcurrencyBenchmark.scope:·gc.churn.G1_Survivor_Space                    128        1000000         256  thrpt    9         0.003 ±        0.006       MB/sec
+ConcurrencyBenchmark.scope:·gc.churn.G1_Survivor_Space.norm               128        1000000         256  thrpt    9       238.611 ±      450.859         B/op
+ConcurrencyBenchmark.scope:·gc.count                                      128        1000000         256  thrpt    9        53.000                      counts
+ConcurrencyBenchmark.scope:·gc.time                                       128        1000000         256  thrpt    9       132.000                          ms
+
+Benchmark result is saved to /Users/trile/dev/trile/concurrency-library-benchmark/result/results-2023-02-02-20-00-31.json
